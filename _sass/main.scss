@@ -1,7 +1,8 @@
 @import "variables";
 
 $theme-colors: (
-  primary: $primary
+  primary: $primary,
+  light: $light
 );
 
 @import "../bootstrap/scss/bootstrap";

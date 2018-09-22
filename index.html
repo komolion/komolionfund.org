@@ -1,11 +1,23 @@
 ---
 layout: default
-title: Home
+title: Komolion Fund - Home
 banner: Empower locals to change lives
 sub-banner: Community members drive social change. We are there to help.
+button-text: Give Now
 ---
-<div id="home-banner" class="jumbotron">
-  <h1 id="banner-text" class="display-4 text-light text-center">{{ page.banner | upcase }}</h1>
-  <hr id="banner-rule">
-  <h4 id="banner-sub-text" class="text-light text-center">{{ page.sub-banner }}</h4>
+<div id="home-banner">
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col align-self-center">
+        <h1 id="banner-text" class="row justify-content-center display-4 text-light">{{ page.banner | upcase }}</h1>
+        <div class="row justify-content-center">
+          <hr id="banner-rule">
+        </div>
+        <h4 id="banner-sub-text" class="row justify-content-center text-light">{{ page.sub-banner }}</h4>
+        <div class="row justify-content-center mt-4">
+          <button id="banner-button" class="btn-primary btn-lg">{{ page.button-text | upcase }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
