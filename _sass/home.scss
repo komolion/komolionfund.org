@@ -12,8 +12,11 @@
 }
 
 #banner-rule {
-  text-shadow: 1px 1px 3px rgba(0,0,0,.3);
   height: 2px;
   width: 50%;
   background-color: $primary;
+}
+
+#banner-sub-text {
+  text-shadow: 1px 1px 3px rgba(0,0,0,.3);
 }
