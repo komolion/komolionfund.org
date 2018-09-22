@@ -1,3 +1,5 @@
-.current {
-  color: green;
-}
+$theme-colors: (
+  primary: #009900
+);
+
+@import "../bootstrap/scss/bootstrap";
