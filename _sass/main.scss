@@ -1,5 +1,9 @@
+@import "variables";
+
 $theme-colors: (
-  primary: #009900
+  primary: $primary
 );
 
 @import "../bootstrap/scss/bootstrap";
+@import "navigation";
+@import "home";
