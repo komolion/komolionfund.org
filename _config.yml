@@ -1,0 +1,23 @@
+collections:
+  team:
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude: []
+
+gems:
+  - jekyll-octicons
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
