@@ -14,7 +14,7 @@ defaults:
 
 exclude: []
 
-gems:
+plugins:
   - jekyll-octicons
 
 sass:

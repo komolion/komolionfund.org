@@ -13,6 +13,17 @@
   font-weight: 500;
 }
 
+.footer-icon {
+  fill: $primary;
+  margin-right: 5px;
+}
+
+.get-in-touch-row {
+  margin-bottom: 10px;
+}
+
 #guide-star > img {
-  height: 100px;
+  display: block;
+  margin: 20px auto 0 auto;
+  height: 125px;
 }
