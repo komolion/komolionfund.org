@@ -13,8 +13,8 @@ serve the people of Kenya and the Men’s Choir through monetary donations
 and service, including serving as the president of the Men's Choir his
 senior year at Baylor. After being mentored by Dr. Randall Bradley at
 Baylor, Mason discovered a passion for developing leadership qualities
-in others. He is also always looking for ways to use his proficiency
-with technology to serve people that do not have the opportunities that
+in others. He is always looking for ways to use his proficiency with
+technology to serve people that do not have the opportunities that
 Mason has been blessed with. Mason is now a technology solutions
 consultant with Credera and lives with his wife Amber in the Dallas,
 Texas.
