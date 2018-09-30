@@ -1,7 +1,7 @@
 ---
 name: Randall Bradley
 position: President
-image: ../assets/images/rbradley.jpg
+image: ../assets/images/team/rbradley.jpg
 linkedin: randall-bradley-18a270
 ---
 Randall Bradley serves as the president and a member of the board of
