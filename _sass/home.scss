@@ -25,3 +25,21 @@
   color: $light;
   cursor: pointer;
 }
+
+#under-banner {
+  border-top: thick solid $primary;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#under-banner-title {
+  font-size: 30px;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  line-height: 36px;
+}
+
+#under-banner-text {
+  font-size: 18px;
+  margin: 20px auto 0 auto;
+}

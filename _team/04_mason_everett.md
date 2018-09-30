@@ -4,8 +4,8 @@ position: Chief Information Officer
 image: ../assets/images/meverett.jpg
 linkedin: masonheverett
 ---
-Mason Everett serves as the Chief Information Officer and a member of
-the Board of Directors for Komolion Human Development Fund. Mason was
+Mason Everett serves as the chief information officer and a member of
+the board of directors for Komolion Human Development Fund. Mason was
 first introduced to the Komolion charitable effort through his visit to
 Kenya with the Baylor University Men’s Choir in 2013, the summer after
 his freshman year at Baylor. Since that trip, Mason has continued to

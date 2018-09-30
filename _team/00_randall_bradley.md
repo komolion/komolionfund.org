@@ -4,8 +4,8 @@ position: President
 image: ../assets/images/rbradley.jpg
 linkedin: randall-bradley-18a270
 ---
-Randall Bradley serves as the President and a member of the Board of
-Directors for Komolion Human Development Fund. Randall has a passion
+Randall Bradley serves as the president and a member of the board of
+directors for Komolion Human Development Fund. Randall has a passion
 for helping underserved people. He has organized six trips to Kenya and
 taken student and volunteer groups to Asia, Europe, and North and South
 America. As a teacher, he has helped musicians use music as a catalyst

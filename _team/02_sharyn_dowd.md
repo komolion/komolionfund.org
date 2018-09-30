@@ -3,8 +3,8 @@ name: Sharyn Dowd
 position: Secretary
 image: ../assets/images/sdowd.jpg
 ---
-Sharyn Dowd serves as the Secretary and a member of the Board of
-Directors for Komolion Human Development Fund. Sharyn has been involved
+Sharyn Dowd serves as the secretary and a member of the board of
+directors for Komolion Human Development Fund. Sharyn has been involved
 in various kinds of mission work since her college days at Wake Forest
 University. Her interests have focused on people who, with additional
 resources and encouragement, can move from subsistence living to
