@@ -2,6 +2,7 @@
 name: Randall Bradley
 position: President
 image: ../assets/images/rbradley.jpg
+linkedin: randall-bradley-18a270
 ---
 Randall Bradley serves as the President and a member of the Board of
 Directors for Komolion Human Development Fund. Randall has a passion

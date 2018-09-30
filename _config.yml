@@ -14,9 +14,6 @@ defaults:
 
 exclude: []
 
-plugins:
-  - jekyll-octicons
-
 sass:
   load_paths:
     - _sass

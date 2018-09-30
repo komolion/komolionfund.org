@@ -2,6 +2,7 @@
 name: Daniel Huizinga
 position: Chief Financial Officer
 image: ../assets/images/dhuizinga.jpg
+linkedin: huizingadaniel
 ---
 Daniel Huizinga serves as the Chief Financial Officer and a member of
 the Board of Directors for Komolion Human Development Fund. Daniel has

@@ -13,7 +13,14 @@ title: Komolion Fund - Team
       <img class="team-member-photo" src="{{ member.image }}"/>
     </div>
     <div class="col col-9">
-      <div class="team-member-title mb-2">{{ member.name }} - {{ member.position}}</div>
+      <div class="team-member-title mb-2">
+        {{ member.name }} - {{ member.position}}
+        {% if member.linkedin %}
+        <a href="https://www.linkedin.com/in/{{ member.linkedin }}" target="_blank">
+          <i class="fab fa-md fa-linkedin text-linkedin ml-1"></i>
+        </a>
+        {% endif %}
+      </div>
       <div class="team-member-description">{{ member.content | markdownify }}</div>
     </div>
   </div>

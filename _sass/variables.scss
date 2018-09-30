@@ -1,8 +1,13 @@
 $primary: #009900;
 $light: #f6f6f6;
 $footer-bg: #252525;
+$linkedin: #0077b5;
 
 $theme-colors: (
   primary: $primary,
   light: $light
 );
+
+.text-linkedin {
+  color: $linkedin;
+}
