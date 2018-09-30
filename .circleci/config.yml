@@ -6,8 +6,10 @@ machine:
   ruby:
     version: 2.5.1
 
+dependencies:
+  override:
+    - make setup
+
 deployment:
   production:
     branch: master
-    commands:
-      - make release
