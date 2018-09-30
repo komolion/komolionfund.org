@@ -1,20 +1,8 @@
-version: 2
 jobs:
-  build:
-
-    # Docker image
+  deploy:
     docker:
       - image: circleci/ruby:2.5-node-browsers
-
-    # Working directory
     working_directory: ~/komolion.github.io
-
-    # Ignore master
-    branches:
-      ignore:
-        - master
-
-    # Deployment steps
     steps:
       - checkout
       - run:
@@ -29,3 +17,12 @@ jobs:
             if [ $CIRCLE_BRANCH == 'develop' ]; then
               bash .circleci/deploy.sh
             fi
+workflows:
+  version: 2
+  build:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              ignore:
+                - master
