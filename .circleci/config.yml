@@ -1,15 +1,17 @@
-machine:
-  timezone:
-    America/Chicago
-  node:
-    version: 8.11.3
-  ruby:
-    version: 2.5.1
-
-dependencies:
-  override:
-    - make setup
-
-deployment:
-  production:
-    branch: master
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.5-node-browsers
+    working_directory: ~/komolion.github.io
+    steps:
+      - checkout
+      - run:
+        name: install dependencies
+        command: |
+          bundle install
+          npm install
+      - run:
+        name: build project
+        command: |
+          bundle exec jekyll build
