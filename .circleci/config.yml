@@ -7,16 +7,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: install
+          name: Install dependencies and build project
           command: |
-            bundle install
             npm install
-      - run:
-          name: build
-          command: |
+            bundle install
             bundle exec jekyll build
       - run:
-          name: deploy
+          name: Deploy project
           command: |
             if [ $CIRCLE_BRANCH == 'master' ]; then
               bash .circleci/deploy.sh
