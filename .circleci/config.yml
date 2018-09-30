@@ -18,6 +18,6 @@ jobs:
       - run:
           name: deploy
           command: |
-            if [ $CIRCLE_BRANCH == $DEPLOY_BRANCH ]; then
+            if [ $CIRCLE_BRANCH == 'master' ]; then
               bash .circleci/deploy.sh
             fi
