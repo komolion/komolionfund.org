@@ -2,8 +2,8 @@ version: 2
 jobs:
   build:
     branches:
-      only:
-        - develop
+      ignore:
+        - master
     docker:
       - image: circleci/ruby:2.5-node-browsers
     working_directory: ~/komolion.github.io
