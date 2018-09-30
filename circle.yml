@@ -1,0 +1,13 @@
+machine:
+  timezone:
+    America/Chicago
+  node:
+    version: 8.11.3
+  ruby:
+    version: 2.5.1
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - make release
