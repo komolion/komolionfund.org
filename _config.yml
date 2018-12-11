@@ -1,14 +1,14 @@
 collections:
   team:
-  work:
+  projects:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "work"
+      type: "projects"
     values:
-      layout: "work"
+      layout: "project"
   - scope:
       path: ""
     values:
