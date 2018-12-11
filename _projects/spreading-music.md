@@ -1,5 +1,5 @@
 ---
-title: Spreading the Ministry of Music in Swahili Around Kenya
+title: Spreading the Ministry of Music in Swahili
 image: ../assets/images/projects/spreading-music.jpg
 ---
 It is the practice of the Baylor University campus ministry to allow one

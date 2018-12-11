@@ -41,19 +41,12 @@ button-text: Give Now
     </div>
   </div>
 </div>
-<div id='our-projects-banner' class='bg-secondary'>
+<div id='core-values-banner' class='bg-secondary'>
   <div class='container'>
-    <div id='our-projects-title' class='text-center'>
-      Our Projects
+    <div id='core-values-title' class='text-center'>
+      Core Values
     </div>
-    <div class='row'>
-      {% for project in site.projects %}
-      <div class='col col-lg-3'>
-        <a href='{{ project.url }}'><img class='our-projects-image' width='100%' src='{{ project.image }}'/></a>
-        <div class='our-projects-image-title pl-2 pr-2 text-center'>{{ project.title }}</div>
-      </div>
-      {% endfor %}
-    </div>
+    <div class='row'></div>
   </div>
 </div>
 <div id='donations-banner' class='bg-primary'>
@@ -63,6 +56,21 @@ button-text: Give Now
         All administrative costs (besides processing fees) are covered by the Komolion Human Development Fund's Board of
         Directors, so 100% of your donation goes directly to empowering communities in Kenya.
       </div>
+    </div>
+  </div>
+</div>
+<div id='our-projects-banner' class='bg-light'>
+  <div class='container'>
+    <div id='our-projects-title' class='text-center'>
+      Projects & Partnerships
+    </div>
+    <div class='row'>
+      {% for project in site.projects %}
+      <div class='col col-lg-3'>
+        <a href='{{ project.url }}'><img class='our-projects-image' width='100%' src='{{ project.image }}'/></a>
+        <div class='our-projects-image-title pl-2 pr-2 text-center'>{{ project.title }}</div>
+      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
