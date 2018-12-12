@@ -1,42 +1,75 @@
 ---
 layout: default
 title: Komolion Fund - Home
-banner: Empower locals to change lives
-sub-banner: Community members drive social change. We are there to help.
-button-text: Give Now
+
+jumbotron-title: Empower locals to change lives
+jumbotron-subtitle: Community members drive social change. We are there to help.
+jumbotron-button-text: Give Now
+
+mission-title: We envision a world in which children and adults have opportunities to thrive personally and to make
+    positive contributions to their communities.
+mission-content: Komolion Human Development Fund encourages and provides funding for projects in local communities that
+    are designed by community members to enable increased education, health, cooperation, poverty reduction and quality
+    of life for the entire community.
+
+core-values-title: Core Values
+
+core-value-one-icon: people-carry
+core-value-one-title: Indigenous Leadership
+core-value-one-content: We will support projects with indigenous leadership. We will operate on the principle that
+    community ownership and active participation are more important than efficiency.
+
+core-value-two-icon: globe-africa
+core-value-two-title: Local Cultures
+core-value-two-content: We recognize that all cultures and traditions have value. We encourage and support cultures and
+    traditions which serve the mutual good of all parties. We expect beneficiaries of education/training to return to
+    their communities of origin to contribute to and promote further development.
+
+core-value-three-icon: balance-scale
+core-value-three-title: Honesty and Transparency
+core-value-three-content: We operate with honesty and transparency. We ensure compliance with laws and regulations
+    within the host country.
+
+donations-title: All administrative costs (besides processing fees) are covered by the Komolion Human Development Fund's
+    Board of Directors, so 100% of your donation goes directly to empowering communities in Kenya.
+
+projects-title: Projects & Partnerships
 ---
-<div id='home-banner'>
+<div id='jumbotron'>
   <div class='container h-100'>
     <div class='row h-100'>
       <div class='col align-self-center'>
-        <h1 id='banner-text' class='row justify-content-center display-4 text-light'>{{ page.banner | upcase }}</h1>
+        <h1 id='jumbotron-text' class='row justify-content-center display-4 text-light'>
+          {{ page.jumbotron-title | upcase }}
+        </h1>
         <div class='row justify-content-center'>
-          <hr id='banner-rule'>
+          <hr id='jumbotron-rule'>
         </div>
-        <h4 id='banner-sub-text' class='row justify-content-center text-light'>{{ page.sub-banner }}</h4>
+        <h4 id='jumbotron-sub-text' class='row justify-content-center text-light'>
+          {{ page.jumbotron-subtitle }}
+        </h4>
         <div class='row justify-content-center mt-4'>
-          <a id='banner-btn'
+          <a id='jumbotron-btn'
              class='btn-primary btn-lg'
              href='https://donorbox.org/komolion-fund-donations'
-             target='_blank'>{{ page.button-text | upcase }}</a>
+             target='_blank'>
+            {{ page.jumbotron-button-text | upcase }}
+          </a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div id='under-banner' class='bg-light'>
+<div id='mission-banner' class='bg-light'>
   <div class='container'>
     <div class='row'>
-      <div id='under-banner-title' class='col text-center'>
-        We envision a world in which children and adults have opportunities to thrive personally and to make positive
-        contributions to their communities.
+      <div id='mission-title' class='col text-center'>
+        {{ page.mission-title }}
       </div>
     </div>
     <div class='row'>
-      <div id='under-banner-text' class='col text-center'>
-        Komolion Human Development Fund encourages and provides funding for projects in local communities that are
-        designed by community members to enable increased education, health, cooperation, poverty reduction and quality
-        of life for the entire community.
+      <div id='mission-text' class='col text-center'>
+        {{ page.mission-content }}
       </div>
     </div>
   </div>
@@ -44,17 +77,56 @@ button-text: Give Now
 <div id='core-values-banner' class='bg-secondary'>
   <div class='container'>
     <div id='core-values-title' class='text-center'>
-      Core Values
+      {{ page.core-values-title }}
     </div>
-    <div class='row'></div>
+    <div class='row text-center'>
+      <div class='col col-lg-4'>
+        <div class='row core-value-icon'></div>
+        <div class='row'>
+          <div class='core-value-title'>
+            {{ page.core-value-one-title }}
+          </div>
+        </div>
+        <div class='row'>
+          <div class='core-value-content'>
+            {{ page.core-value-one-content }}
+          </div>
+        </div>
+      </div>
+      <div class='col col-lg-4'>
+        <div class='row core-value-icon'></div>
+        <div class='row'>
+          <div class='core-value-title'>
+            {{ page.core-value-two-title }}
+          </div>
+        </div>
+        <div class='row'>
+          <div class='core-value-content'>
+            {{ page.core-value-two-content }}
+          </div>
+        </div>
+      </div>
+      <div class='col col-lg-4'>
+        <div class='row core-value-icon'></div>
+        <div class='row'>
+          <div class='core-value-title'>
+            {{ page.core-value-three-title }}
+          </div>
+        </div>
+        <div class='row'>
+          <div class='core-value-content'>
+            {{ page.core-value-three-content }}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div id='donations-banner' class='bg-primary'>
   <div class='container'>
     <div class='row'>
       <div id='donations-banner-text' class='col text-center text-light'>
-        All administrative costs (besides processing fees) are covered by the Komolion Human Development Fund's Board of
-        Directors, so 100% of your donation goes directly to empowering communities in Kenya.
+        {{ page.donations-title }}
       </div>
     </div>
   </div>
@@ -62,7 +134,7 @@ button-text: Give Now
 <div id='our-projects-banner' class='bg-light'>
   <div class='container'>
     <div id='our-projects-title' class='text-center'>
-      Projects & Partnerships
+      {{ page.projects-title }}
     </div>
     <div class='row'>
       {% for project in site.projects %}
