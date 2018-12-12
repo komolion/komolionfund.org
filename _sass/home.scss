@@ -107,3 +107,19 @@
     line-height: 20px;
   }
 }
+
+#numbers-banner {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: $light;
+
+  .number-title {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .number-content {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}

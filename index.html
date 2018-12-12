@@ -14,21 +14,6 @@ mission-content: Komolion Human Development Fund encourages and provides funding
 
 core-values-title: Core Values
 
-core-value-one-icon: people-carry
-core-value-one-title: Indigenous Leadership
-core-value-one-content: We will operate on the principle that community ownership and active participation are more
-    important than efficiency.
-
-core-value-two-icon: globe-africa
-core-value-two-title: Local Cultures
-core-value-two-content: We recognize that all cultures and traditions have value support cultures and traditions which
-    serve the mutual good of all parties.
-
-core-value-three-icon: balance-scale
-core-value-three-title: Honesty and Transparency
-core-value-three-content: We operate with honesty and transparency. We ensure compliance with laws and regulations
-    within the host country.
-
 donations-title: All administrative costs (besides processing fees) are covered by the Komolion Human Development Fund's
     Board of Directors, so 100% of your donation goes directly to empowering communities in Kenya.
 
@@ -79,57 +64,25 @@ projects-title: Projects & Partnerships
       {{ page.core-values-title }}
     </div>
     <div class='row text-center'>
+      {% for value in site.data.values %}
       <div class='col col-lg-4'>
         <div class='row'>
           <div class='core-value-icon'>
-            <i class='fa fa-3x fa-{{ page.core-value-one-icon }} text-primary'></i>
+            <i class='fa fa-3x fa-{{ value.icon }} text-primary'></i>
           </div>
         </div>
         <div class='row'>
           <div class='core-value-title'>
-            {{ page.core-value-one-title }}
+            {{ value.title }}
           </div>
         </div>
         <div class='row'>
           <div class='core-value-content'>
-            {{ page.core-value-one-content }}
+            {{ value.content }}
           </div>
         </div>
       </div>
-      <div class='col col-lg-4'>
-        <div class='row'>
-          <div class='core-value-icon'>
-            <i class='fa fa-3x fa-{{ page.core-value-two-icon }} text-primary'></i>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='core-value-title'>
-            {{ page.core-value-two-title }}
-          </div>
-        </div>
-        <div class='row'>
-          <div class='core-value-content'>
-            {{ page.core-value-two-content }}
-          </div>
-        </div>
-      </div>
-      <div class='col col-lg-4'>
-        <div class='row'>
-          <div class='core-value-icon'>
-            <i class='fa fa-3x fa-{{ page.core-value-three-icon }} text-primary'></i>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='core-value-title'>
-            {{ page.core-value-three-title }}
-          </div>
-        </div>
-        <div class='row'>
-          <div class='core-value-content'>
-            {{ page.core-value-three-content }}
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -152,6 +105,25 @@ projects-title: Projects & Partnerships
       <div class='col col-lg-3'>
         <a href='{{ project.url }}'><img class='our-projects-image' width='100%' src='{{ project.image }}'/></a>
         <div class='our-projects-image-title pl-2 pr-2 text-center'>{{ project.title }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div id='numbers-banner' class='bg-primary'>
+  <div class='container'>
+    <div class='row text-center'>
+      {% for number in site.data.numbers %}
+      <div class='col col-lg-3'>
+        <div class='number-icon'>
+          <i class='fa fa-3x fa-{{ number.icon }} text-light'></i>
+        </div>
+        <div class='number-title'>
+          {{ number.title }}
+        </div>
+        <div class='number-content'>
+          {{ number.content }}
+        </div>
       </div>
       {% endfor %}
     </div>
