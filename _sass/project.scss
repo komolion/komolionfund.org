@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 .project-image {
   background-size: cover;
@@ -8,15 +8,7 @@
 .project-image-overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.project-title-container {
-  height: 100%;
-}
-
-.project-title-row {
-  height: 100%;
+  background-color: $image-overlay;
 }
 
 .project-title {
@@ -25,8 +17,7 @@
   padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
-  text-shadow: 1px 1px 3px rgba(0,0,0,.3);
-  font-weight: 500;
+  font-family: $font-family-handwriting;
 }
 
 .project-description-row {

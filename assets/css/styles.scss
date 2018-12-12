@@ -1,3 +1,10 @@
 ---
 ---
-@import "main";
+@import 'variables';
+@import 'bootstrap/scss/bootstrap';
+@import 'fonts';
+@import 'footer';
+@import 'home';
+@import 'navigation';
+@import 'project';
+@import 'team';

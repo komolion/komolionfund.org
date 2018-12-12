@@ -20,25 +20,27 @@ donations-title: All administrative costs (besides processing fees) are covered 
 projects-title: Projects & Partnerships
 ---
 <div id='jumbotron'>
-  <div class='container h-100'>
-    <div class='row h-100'>
-      <div class='col align-self-center'>
-        <h1 id='jumbotron-text' class='row justify-content-center text-center display-4 text-light'>
-          {{ page.jumbotron-title | upcase }}
-        </h1>
-        <div class='row justify-content-center'>
-          <hr id='jumbotron-rule'>
-        </div>
-        <h4 id='jumbotron-sub-text' class='row justify-content-center text-light'>
-          {{ page.jumbotron-subtitle }}
-        </h4>
-        <div class='row justify-content-center mt-4'>
-          <a id='jumbotron-btn'
-             class='btn-primary btn-lg'
-             href='https://donorbox.org/komolion-fund-donations'
-             target='_blank'>
-            {{ page.jumbotron-button-text | upcase }}
-          </a>
+  <div id='jumbotron-overlay' class='h-100'>
+    <div class='container h-100'>
+      <div class='row h-100'>
+        <div class='col align-self-center'>
+          <h1 id='jumbotron-text' class='row justify-content-center text-center display-4 text-light'>
+            {{ page.jumbotron-title | upcase }}
+          </h1>
+          <div class='row justify-content-center'>
+            <hr id='jumbotron-rule'>
+          </div>
+          <h4 id='jumbotron-sub-text' class='row justify-content-center text-light'>
+            {{ page.jumbotron-subtitle }}
+          </h4>
+          <div class='row justify-content-center mt-4'>
+            <a id='jumbotron-btn'
+               class='btn-primary btn-lg'
+               href='https://donorbox.org/komolion-fund-donations'
+               target='_blank'>
+              {{ page.jumbotron-button-text | upcase }}
+            </a>
+          </div>
         </div>
       </div>
     </div>

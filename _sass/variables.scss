@@ -1,9 +1,11 @@
+// Colors
 $primary: #009900;
 $secondary: #eaeaea;
 $light: #f6f6f6;
 $footer-bg: #252525;
 $linkedin: #0077b5;
 $shadow-gray: #666666;
+$image-overlay: rgba(0, 0, 0, 0.6);
 
 $theme-colors: (
   primary: $primary,
@@ -11,6 +13,11 @@ $theme-colors: (
   light: $light
 );
 
-.text-linkedin {
-  color: $linkedin;
-}
+// Fonts
+$font-family-base: Montserrat, Helvetica, Arial, sans-serif;
+$font-family-handwriting: 'Permanent Marker', cursive;
+
+// Other
+$nav-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+$small-shadow: 0 4px 4px $shadow-gray, 0 0 4px $shadow-gray;
+$large-shadow: 0 10px 10px $shadow-gray, 0 0 10px $shadow-gray;
