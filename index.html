@@ -16,14 +16,13 @@ core-values-title: Core Values
 
 core-value-one-icon: people-carry
 core-value-one-title: Indigenous Leadership
-core-value-one-content: We will support projects with indigenous leadership. We will operate on the principle that
-    community ownership and active participation are more important than efficiency.
+core-value-one-content: We will operate on the principle that community ownership and active participation are more
+    important than efficiency.
 
 core-value-two-icon: globe-africa
 core-value-two-title: Local Cultures
-core-value-two-content: We recognize that all cultures and traditions have value. We encourage and support cultures and
-    traditions which serve the mutual good of all parties. We expect beneficiaries of education/training to return to
-    their communities of origin to contribute to and promote further development.
+core-value-two-content: We recognize that all cultures and traditions have value support cultures and traditions which
+    serve the mutual good of all parties.
 
 core-value-three-icon: balance-scale
 core-value-three-title: Honesty and Transparency
@@ -39,7 +38,7 @@ projects-title: Projects & Partnerships
   <div class='container h-100'>
     <div class='row h-100'>
       <div class='col align-self-center'>
-        <h1 id='jumbotron-text' class='row justify-content-center display-4 text-light'>
+        <h1 id='jumbotron-text' class='row justify-content-center text-center display-4 text-light'>
           {{ page.jumbotron-title | upcase }}
         </h1>
         <div class='row justify-content-center'>
@@ -81,7 +80,11 @@ projects-title: Projects & Partnerships
     </div>
     <div class='row text-center'>
       <div class='col col-lg-4'>
-        <div class='row core-value-icon'></div>
+        <div class='row'>
+          <div class='core-value-icon'>
+            <i class='fa fa-3x fa-{{ page.core-value-one-icon }} text-primary'></i>
+          </div>
+        </div>
         <div class='row'>
           <div class='core-value-title'>
             {{ page.core-value-one-title }}
@@ -94,7 +97,11 @@ projects-title: Projects & Partnerships
         </div>
       </div>
       <div class='col col-lg-4'>
-        <div class='row core-value-icon'></div>
+        <div class='row'>
+          <div class='core-value-icon'>
+            <i class='fa fa-3x fa-{{ page.core-value-two-icon }} text-primary'></i>
+          </div>
+        </div>
         <div class='row'>
           <div class='core-value-title'>
             {{ page.core-value-two-title }}
@@ -107,7 +114,11 @@ projects-title: Projects & Partnerships
         </div>
       </div>
       <div class='col col-lg-4'>
-        <div class='row core-value-icon'></div>
+        <div class='row'>
+          <div class='core-value-icon'>
+            <i class='fa fa-3x fa-{{ page.core-value-three-icon }} text-primary'></i>
+          </div>
+        </div>
         <div class='row'>
           <div class='core-value-title'>
             {{ page.core-value-three-title }}
