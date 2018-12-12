@@ -1,6 +1,6 @@
 ---
 title: Supporting Schools in Kajiado
-image: ../assets/images/project /kajiado-schools.jpg
+image: ../assets/images/projects/kajiado-schools.jpg
 ---
 Kajiado is a town about 50 miles south of Nairobi, Kenya. We have been involved with the Africa Inland Church boarding
 school for girls there, as well as with a school for physically and intellectually challenged children on the same
