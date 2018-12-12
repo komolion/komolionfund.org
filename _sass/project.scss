@@ -1,0 +1,41 @@
+@import "variables";
+
+.project-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-image-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.project-title-container {
+  height: 100%;
+}
+
+.project-title-row {
+  height: 100%;
+}
+
+.project-title {
+  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+  font-weight: 500;
+}
+
+.project-description-row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project-description {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

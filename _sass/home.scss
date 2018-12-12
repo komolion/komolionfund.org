@@ -4,42 +4,91 @@
   background: url('../images/home-banner.jpg') no-repeat;
   background-size: cover;
   height: 80vh;
-}
 
-#banner-text {
-  text-shadow: 1px 1px 3px rgba(0,0,0,.3);
-  font-weight: 500;
-}
+  #banner-text {
+    text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    font-weight: 500;
+  }
 
-#banner-rule {
-  height: 2px;
-  width: 50%;
-  background-color: $primary;
-}
+  #banner-rule {
+    height: 2px;
+    width: 50%;
+    background-color: $primary;
+  }
 
-#banner-sub-text {
-  text-shadow: 1px 1px 3px rgba(0,0,0,.3);
-}
+  #banner-sub-text {
+    text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+  }
 
-#banner-btn {
-  color: $light;
-  cursor: pointer;
+  #banner-btn {
+    color: $light;
+    cursor: pointer;
+  }
 }
 
 #under-banner {
   border-top: thick solid $primary;
   padding-top: 40px;
   padding-bottom: 50px;
+
+  #under-banner-title {
+    font-size: 30px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 36px;
+  }
+
+  #under-banner-text {
+    font-size: 18px;
+    margin: 20px auto 0 auto;
+  }
 }
 
-#under-banner-title {
-  font-size: 30px;
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  line-height: 36px;
+#core-values-banner {
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  #core-values-title {
+    font-size: 30px;
+    margin: 0 auto 30px auto;
+    line-height: 36px;
+  }
 }
 
-#under-banner-text {
-  font-size: 18px;
-  margin: 20px auto 0 auto;
+#donations-banner {
+  padding-top: 30px;
+  padding-bottom: 35px;
+
+  #donations-banner-text {
+    font-size: 24px;
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+    line-height: 36px;
+  }
+}
+
+#our-projects-banner {
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  #our-projects-title {
+    font-size: 30px;
+    margin: 0 auto 30px auto;
+    line-height: 36px;
+  }
+
+  .our-projects-image {
+    border-radius: 4px;
+    border: 2px solid $primary;
+    box-shadow: 0 4px 4px $shadow-gray, 0 0 4px $shadow-gray;
+    &:hover {
+      box-shadow: 0 10px 10px $shadow-gray, 0 0 10px $shadow-gray;
+    }
+  }
+
+  .our-projects-image-title {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    line-height: 20px;
+  }
 }

@@ -1,12 +1,14 @@
 collections:
   team:
+  projects:
+    output: true
 
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: "projects"
     values:
-      layout: "post"
+      layout: "project"
   - scope:
       path: ""
     values:
