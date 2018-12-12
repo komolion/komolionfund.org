@@ -1,57 +1,72 @@
 @import "variables";
 
-#home-banner {
-  background: url('../images/home-banner.jpg') no-repeat;
+#jumbotron {
+  background: url('../images/jumbotron.jpg') no-repeat;
   background-size: cover;
   height: 80vh;
 
-  #banner-text {
+  #jumbotron-text {
     text-shadow: 1px 1px 3px rgba(0,0,0,.3);
     font-weight: 500;
   }
 
-  #banner-rule {
+  #jumbotron-rule {
     height: 2px;
     width: 50%;
     background-color: $primary;
   }
 
-  #banner-sub-text {
+  #jumbotron-sub-text {
     text-shadow: 1px 1px 3px rgba(0,0,0,.3);
   }
 
-  #banner-btn {
+  #jumbotron-btn {
     color: $light;
     cursor: pointer;
   }
 }
 
-#under-banner {
+#mission-banner {
   border-top: thick solid $primary;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 70px;
 
-  #under-banner-title {
+  #mission-title {
     font-size: 30px;
     max-width: 800px;
     margin: 0 auto 20px auto;
     line-height: 36px;
   }
 
-  #under-banner-text {
+  #mission-text {
     font-size: 18px;
     margin: 20px auto 0 auto;
   }
 }
 
 #core-values-banner {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 70px;
 
   #core-values-title {
     font-size: 30px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 50px auto;
     line-height: 36px;
+  }
+
+  .core-value-icon {
+    margin: 0 auto 20px auto;
+  }
+
+  .core-value-title {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+
+  .core-value-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -68,12 +83,12 @@
 }
 
 #our-projects-banner {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 70px;
+  padding-bottom: 50px;
 
   #our-projects-title {
     font-size: 30px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 50px auto;
     line-height: 36px;
   }
 
