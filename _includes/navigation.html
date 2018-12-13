@@ -1,25 +1,25 @@
-<div id="navigation" class="fixed-top">
-  <nav class="container navbar navbar-expand-md bg-light">
-    <a class="navbar-brand" href="/">
-      <img id="nav-logo" src="../assets/images/nav-logo.png">
+<div id='navigation' class='fixed-top'>
+  <nav class='container navbar navbar-expand-md bg-light'>
+    <a class='navbar-brand' href='/'>
+      <img id='nav-logo' src='../assets/images/nav-logo.png'>
     </a>
-    <button class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class='navbar-toggler'
+            type='button'
+            data-toggle='collapse'
+            data-target='#navbarNavAltMarkup'
+            aria-controls='navbarNavAltMarkup'
+            aria-expanded='false'
+            aria-label='Toggle navigation'>
+      <span class='navbar-toggler-icon'></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
+    <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
+      <div class='navbar-nav ml-auto'>
         {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" class="nav-item nav-link">{{ item.name }}</a>
+        <a href='{{ item.link }}' class='nav-item nav-link'>{{ item.name }}</a>
         {% endfor %}
-        <a href="https://donorbox.org/komolion-fund-donations" class="nav-item nav-link" target="_blank">Give</a>
+        <a href='https://donorbox.org/komolion-fund-donations' class='nav-item nav-link' target='_blank'>Give</a>
       </div>
     </div>
   </nav>
 </div>
-<div id="nav-spacer"></div>
+<div id='nav-spacer'></div>
