@@ -25,6 +25,9 @@
   #jumbotron-btn {
     color: $light;
     cursor: pointer;
+    &:hover {
+      text-decoration-line: none;
+    }
   }
 }
 
