@@ -14,9 +14,17 @@ defaults:
     values:
       layout: "default"
 
-exclude: []
-
 sass:
   load_paths:
     - _sass
     - node_modules
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - Makefile
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md

@@ -8,10 +8,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies and build project
-          command: |
-            npm install
-            bundle install
-            bundle exec jekyll build
+          command: make build
       - persist_to_workspace:
           root: .
           paths: _site/
@@ -27,7 +24,7 @@ jobs:
           at: ~/deployment
       - run:
           name: Deploy to S3
-          command: aws s3 sync ./_site/ s3://komolionfund.org/
+          command: aws s3 sync ./_site/ s3://komolionfund.org/ --delete
 
 workflows:
   version: 2
