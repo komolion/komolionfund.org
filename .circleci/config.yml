@@ -1,8 +1,9 @@
+version: 2
 jobs:
-  deploy:
+  build:
     docker:
       - image: circleci/ruby:2.5-node-browsers
-    working_directory: ~/komolion.github.io
+    working_directory: ~/komolionfund.org
     steps:
       - checkout
       - run:
@@ -11,18 +12,26 @@ jobs:
             npm install
             bundle install
             bundle exec jekyll build
+  deploy:
+    docker:
+      - image: circleci/python:2.7-jessie
+    working_directory: ~/komolionfund.org
+    steps:
       - run:
-          name: Deploy project
-          command: |
-            if [ $CIRCLE_BRANCH == 'develop' ]; then
-              bash .circleci/deploy.sh
-            fi
+          name: Install awscli
+          command: sudo pip install awscli
+      - run:
+          name: Deploy to S3
+          command: aws s3 sync jekyll/_site/ s3://komolionfund.org/ --delete
+
 workflows:
   version: 2
-  build:
+  build-deploy:
     jobs:
+      - build
       - deploy:
+          requires:
+            - build
           filters:
             branches:
-              only:
-                - develop
+              only: master
