@@ -18,6 +18,9 @@
   </head>
   <body>
     {% include navigation.html %}
+    <!--[if IE]>
+      {% include no-support.html %}
+    <![endif]!-->
     {{ content }}
     {% include footer.html %}
   </body>
