@@ -22,7 +22,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploy to S3
-          command: aws s3 sync jekyll/_site/ s3://komolionfund.org/ --delete
+          command: aws s3 sync _site/ s3://komolionfund.org/ --delete
 
 workflows:
   version: 2
