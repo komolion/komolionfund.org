@@ -27,7 +27,7 @@ jobs:
           at: ~/deployment
       - run:
           name: Deploy to S3
-          command: ls -al
+          command: aws s3 sync ./_site/ s3://komolionfund.org/ —delete
 
 workflows:
   version: 2
