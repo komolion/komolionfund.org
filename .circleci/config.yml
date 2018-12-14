@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.5-node-browsers
-    working_directory: ~/app
+    working_directory: ~/deployment
     steps:
       - checkout
       - run:
@@ -12,17 +12,22 @@ jobs:
             npm install
             bundle install
             bundle exec jekyll build
+      - persist_to_workspace:
+          root: .
+          paths: _site/
   deploy:
     docker:
       - image: circleci/python:2.7-jessie
-    working_directory: ~/app
+    working_directory: ~/deployment
     steps:
       - run:
           name: Install awscli
           command: sudo pip install awscli
+      - attach_workspace:
+          at: ~/deployment
       - run:
           name: Deploy to S3
-          command: aws s3 sync komolionfund.org/_site/ s3://komolionfund.org/ --delete
+          command: aws s3 sync deployment/_site/ s3://komolionfund.org/ --delete
 
 workflows:
   version: 2
