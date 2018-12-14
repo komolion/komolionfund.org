@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=EmulateIE9'>
     <title>{{ page.title }}</title>
     <link rel='stylesheet' href='/assets/css/styles.css'>
     <link rel='shortcut icon' type='image/png' href='/assets/images/image-only-logo.png'>
@@ -19,7 +20,7 @@
   <body>
     {% include navigation.html %}
     <!--[if IE]>
-      {% include no-support.html %}
+    {% include no-support.html %}
     <![endif]-->
     {{ content }}
     {% include footer.html %}
