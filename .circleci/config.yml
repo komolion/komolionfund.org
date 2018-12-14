@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.5-node-browsers
-    working_directory: ~/komolionfund.org
+    working_directory: ~/app
     steps:
       - checkout
       - run:
@@ -15,14 +15,14 @@ jobs:
   deploy:
     docker:
       - image: circleci/python:2.7-jessie
-    working_directory: ~/komolionfund.org
+    working_directory: ~/app
     steps:
       - run:
           name: Install awscli
           command: sudo pip install awscli
       - run:
           name: Deploy to S3
-          command: aws s3 sync _site/ s3://komolionfund.org/ --delete
+          command: aws s3 sync komolionfund.org/_site/ s3://komolionfund.org/ --delete
 
 workflows:
   version: 2
