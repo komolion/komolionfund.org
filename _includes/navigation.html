@@ -1,16 +1,12 @@
-<div id='navigation' class='fixed-top'>
-  <nav class='container navbar navbar-expand-md bg-light'>
+<div id='navigation' class='fixed-top bg-light'>
+  <nav class='container-fluid navbar navbar-expand-md'>
     <a class='navbar-brand' href='/'>
-      <img id='nav-logo' src='../assets/images/nav-logo.png'>
+      <img class='d-lg-inline d-none nav-logo' src='../assets/images/full-logo.png'>
+      <img class='d-inline d-lg-none nav-logo' src='../assets/images/text-only-logo.png'>
     </a>
-    <button class='navbar-toggler'
-            type='button'
-            data-toggle='collapse'
-            data-target='#navbarNavAltMarkup'
-            aria-controls='navbarNavAltMarkup'
-            aria-expanded='false'
-            aria-label='Toggle navigation'>
-      <span class='navbar-toggler-icon'></span>
+    <button class='navbar-toggler d-md-none' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup'
+            aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
+      <span class='navbar-toggler-icon'><i class='fa fa-bars fa-lg text-primary'></i></span>
     </button>
     <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
       <div class='navbar-nav ml-auto'>
