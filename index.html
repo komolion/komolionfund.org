@@ -102,9 +102,9 @@ projects-title: Projects & Partnerships
     <div id='our-projects-title' class='text-center'>
       {{ page.projects-title }}
     </div>
-    <div class='row'>
+    <div class='row justify-content-center'>
       {% for project in site.projects %}
-      <div class='col col-lg-3'>
+      <div class='col col-lg-3 col-md-4 col-sm-6 col-12'>
         <a href='{{ project.url }}'><img class='our-projects-image' width='100%' src='{{ project.image }}'/></a>
         <div class='our-projects-image-title pl-2 pr-2 text-center'>{{ project.title }}</div>
       </div>
@@ -112,11 +112,11 @@ projects-title: Projects & Partnerships
     </div>
   </div>
 </div>
-<div id='numbers-banner' class='bg-primary'>
+<div id='numbers-banner' class='bg-primary d-none d-sm-block'>
   <div class='container-fluid'>
     <div class='row text-center'>
       {% for number in site.data.numbers %}
-      <div class='col col-lg-3 col-12'>
+      <div class='col col-md-3 col-6'>
         <div class='number-icon'>
           <i class='fa fa-3x fa-{{ number.icon }} text-light'></i>
         </div>
