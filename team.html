@@ -9,10 +9,10 @@ title: Board of Directors
     {% for member in site.team %}
     <hr>
     <div class='row team-member-row align-items-center'>
-      <div class='col col-3'>
-        <img class='team-member-photo' src='{{ member.image }}'/>
+      <div class='col col-lg-4 col-md-5 col-12'>
+        <img class='team-member-photo ml-auto mr-auto mb-md-0 mb-4' src='{{ member.image }}'/>
       </div>
-      <div class='col col-9'>
+      <div class='col col-lg-8 col-md-7 col-12'>
         <div class='team-member-title mb-2'>
           {{ member.name }} - {{ member.position}}
           {% if member.linkedin %}

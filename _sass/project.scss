@@ -19,6 +19,9 @@
   margin-left: auto;
   font-family: $font-family-header;
   font-weight: 700;
+  @media (max-width: 575px) {
+    font-size: 36px;
+  }
 }
 
 .project-description-row {
