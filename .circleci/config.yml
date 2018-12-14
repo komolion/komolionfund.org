@@ -17,7 +17,7 @@ jobs:
           paths: _site/
   deploy:
     docker:
-      - image: circleci/python:2.7-jessie
+      - image: circleci/python
     working_directory: ~/deployment
     steps:
       - run:
