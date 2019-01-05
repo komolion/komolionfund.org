@@ -19,4 +19,4 @@ student came on this trip and helped the men provide a simple medical clinic for
 to buy “shoes that grow” for all the children of the village.
 
 We will be able to continue with community development work only if we can continue to raise funds beyond what is needed
-for the girls’ tuition and for the coming-of-age ceremonies that substitute for female genital mutilation.
+for the students’ tuition and for the coming-of-age ceremonies that substitute for female genital mutilation.
