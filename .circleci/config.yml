@@ -25,6 +25,11 @@ jobs:
       - run:
           name: Deploy to S3
           command: aws s3 sync ./_site/ s3://www.komolionfund.org/ --delete
+      - run:
+          name: Invalidate Cache
+          command: |
+            aws cloudfront create-invalidation --distribution-id E19RRXFFJ1N65H --paths "/assets/css/*" "/projects/*" "/budget.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
+            aws cloudfront create-invalidation --distribution-id EU7GYR4PPCDYO --paths "/assets/css/*" "/projects/*" "/budget.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
 
 workflows:
   version: 2
