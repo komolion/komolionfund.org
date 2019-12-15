@@ -22,11 +22,16 @@
     background-color: $primary;
   }
 
-  #jumbotron-btn {
-    color: $light;
+  .jumbotron-btn {
     cursor: pointer;
     &:hover {
       text-decoration-line: none;
+    }
+    &#jumbotron-give-btn {
+      color: $light;
+    }
+    &#jumbotron-report-btn {
+      color: $primary;
     }
   }
 }

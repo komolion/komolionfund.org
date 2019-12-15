@@ -4,7 +4,8 @@ title: Komolion Fund
 
 jumbotron-title: Empower locals to change lives
 jumbotron-subtitle: Community members drive social change. We are there to help.
-jumbotron-button-text: Give Now
+jumbotron-give-button-text: Give Now
+jumbotron-report-button-text: View 2019 Report
 
 mission-title: We envision a world in which children and adults have opportunities to thrive personally and to make
     positive contributions to their communities.
@@ -39,11 +40,19 @@ video-description: The winds of change are blowing in Komolion, a tiny village i
             {{ page.jumbotron-subtitle }}
           </h4>
           <div class='row justify-content-center mt-4'>
-            <a id='jumbotron-btn'
-               class='btn-primary btn-lg'
+            <a id='jumbotron-give-btn'
+               class='jumbotron-btn m-2 btn-primary btn-lg'
                href='https://donorbox.org/komolion-fund-donations'
-               target='_blank'>
-              {{ page.jumbotron-button-text | upcase }}
+               target='_blank'
+               rel='noreferrer noopener'>
+              {{ page.jumbotron-give-button-text | upcase }}
+            </a>
+            <a id='jumbotron-report-btn'
+               class='jumbotron-btn m-2 btn-secondary btn-lg'
+               href='/assets/pdf/2019report.pdf'
+               target='_blank'
+               rel='noreferrer noopener'>
+              {{ page.jumbotron-report-button-text | upcase }}
             </a>
           </div>
         </div>
