@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: komolionfund.org
+Token: 25243c96e93103b5b169e018ae17bf2052b41d75f9936676ac7154d528eaf96e
