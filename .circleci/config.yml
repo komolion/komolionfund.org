@@ -28,8 +28,8 @@ jobs:
       - run:
           name: Invalidate Cache
           command: |
-            aws cloudfront create-invalidation --distribution-id E19RRXFFJ1N65H --paths "/assets/css/*" "/projects/*" "/budget.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
-            aws cloudfront create-invalidation --distribution-id EU7GYR4PPCDYO --paths "/assets/css/*" "/projects/*" "/budget.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
+            aws cloudfront create-invalidation --distribution-id E19RRXFFJ1N65H --paths "/assets/css/*" "/projects/*" "/budget.html" "/give.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
+            aws cloudfront create-invalidation --distribution-id EU7GYR4PPCDYO --paths "/assets/css/*" "/projects/*" "/budget.html" "/give.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
 
 workflows:
   version: 2
