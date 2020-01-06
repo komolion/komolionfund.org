@@ -8,7 +8,9 @@ jobs:
       - checkout
       - run:
           name: Install dependencies and build project
-          command: make build
+          command: |
+            gem install bundler -v 2.1.4
+            make build
       - persist_to_workspace:
           root: .
           paths: _site/
