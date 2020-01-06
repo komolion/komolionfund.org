@@ -1,0 +1,22 @@
+name: Komolion Fund Site Build/Deploy
+on:
+  push:
+    branches:
+      - action
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v1
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.5.3'
+      - name: Build project
+        run: make build
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: latest
+          path: _site/
