@@ -13,6 +13,8 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.6.3'
+      - name: Get correct bundler
+        run: gem install bundler -v '2.1.4'
       - name: Build project
         run: make build
       - name: Upload artifact
