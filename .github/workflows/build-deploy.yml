@@ -14,11 +14,33 @@ jobs:
         with:
           ruby-version: '2.6.3'
       - name: Get correct bundler
-        run: gem install bundler -v '2.1.4'
+        run: |
+          gem install bundler -v '2.1.4'
       - name: Build project
-        run: make build
+        run: |
+          make build
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
-          name: latest
+          name: site
           path: _site/
+  # deploy:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Download artifact
+  #       uses: actions/download-artifact@v1
+  #       with:
+  #         name: site
+  #     - name: Configure AWS credentials
+  #       uses: aws-actions/configure-aws-credentials@v1
+  #       with:
+  #         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  #         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  #         aws-region: us-east-1
+  #     - name: Deploy to S3
+  #       run: |
+  #         aws s3 sync ./site/ s3://www.komolionfund.org/ --delete
+  #     - name: Invalidate cache
+  #       run: |
+  #         aws cloudfront create-invalidation --distribution-id E19RRXFFJ1N65H --paths "/assets/css/*" "/projects/*" "/budget.html" "/give.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
+  #         aws cloudfront create-invalidation --distribution-id EU7GYR4PPCDYO --paths "/assets/css/*" "/projects/*" "/budget.html" "/give.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
