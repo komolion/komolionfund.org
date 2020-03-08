@@ -15,7 +15,18 @@ photos:
   - src: /assets/images/projects/page_photos/combating_fgm/reson_speaking.jpg
     alt: Reson speaking
 ---
-### What is Female Genital Mutilation?
+### 2019 Alternative Rite of Passage Ceremony
+A third alternative rite of passage ceremony was held in 2019, with attendance from 47 girls and 33 boys, as well as key
+members of the community and government officials. We plan to continue these ceremonies every other year to encourage
+girls to be focused, determined, dedicated, and courageous in their pursuit of education and a better life.
+
+Photos from the 2019 ceremony are included below.
+
+[View the full ceremony report here.](/assets/pdf/2019report.pdf)
+
+### Frequently Asked Questions
+
+##### What is Female Genital Mutilation?
 Female Genital Mutilation (FGM) is a cultural custom practiced by some groups in Africa, the Middle East, and parts of
 South Asia. The custom goes back hundreds of years. Though it is not officially sanctioned by any sacred text, the
 ritual is practiced by numerous religious groups, including Christians and Muslims.
@@ -51,8 +62,3 @@ transition to womanhood by the potential husbands of the community. This is the 
 Pokot, Kenya. In 2016 alone, [45 young women went through this ceremony](https://www.youtube.com/watch?v=yGBTKKyyYiI). A
 [second ceremony](https://www.youtube.com/watch?v=Sne4eb4xemU) was held in 2017, and a third in 2019. We hope to hold
 one every other year.
-
-### 2019 Alternative Rite of Passage Ceremony
-A third ceremony was held in 2019, with attendance from 47 girls and 33 boys, as well as key members of the community
-and government officials. We plan to continue these ceremonies every other year to encourage girls to be focused,
-determined, dedicated, and courageous in their pursuit of education and a better life.
