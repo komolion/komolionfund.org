@@ -1,6 +1,6 @@
 ---
 title: Supporting the Education of Girls in Komolion
-image: ../assets/images/projects/header_photos/girls-education.jpg
+image: /assets/images/projects/header_photos/girls_education.jpg
 ---
 When the Bradleys led a music group to Kenya in 2007, they visited the Komolion village on the northwest shore of Lake
 Baringo. The residents of Komolion belong to the eastern branch of the Pokot people group, a sub-group of the Kalenjin

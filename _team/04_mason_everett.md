@@ -1,7 +1,7 @@
 ---
 name: Mason Everett
 position: Chief Information Officer
-image: ../assets/images/team/meverett.jpg
+image: /assets/images/team/meverett.jpg
 linkedin: masonheverett
 ---
 Mason Everett serves as the chief information officer and a member of the board of directors for Komolion Human

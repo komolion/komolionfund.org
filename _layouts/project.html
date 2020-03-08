@@ -13,7 +13,12 @@ layout: default
   </div>
   <div class='container-fluid'>
     <div class='project-description-row row'>
-      <div class='project-description'>{{ content }}</div>
+      <div class='project-description'>
+        {{ content }}
+        {% for photo in page.photos %}
+          <img class="project-body-image" src="{{ photo.src }}" alt="{{ photo.alt }}" width="100%"/>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>

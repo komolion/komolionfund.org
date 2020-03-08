@@ -1,7 +1,7 @@
 ---
 name: Brenda Bradley
 position: Vice President
-image: ../assets/images/team/bbradley.jpg
+image: /assets/images/team/bbradley.jpg
 ---
 Brenda Bradley serves as the vice president and a member of the board of directors for Komolion Human Development Fund.
 Brenda has participated in mission work internationally and locally since first serving on a mission team to Torreon,
