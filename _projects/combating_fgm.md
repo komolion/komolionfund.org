@@ -2,8 +2,6 @@
 title: Combating Female Genital Mutilation
 image: /assets/images/projects/header_photos/combating_fgm.jpg
 photos:
-  - src: /assets/images/projects/page_photos/combating_fgm/boys_and_girls.jpg
-    alt: Boys and girls
   - src: /assets/images/projects/page_photos/combating_fgm/boys_singing.jpg
     alt: Boys singing
   - src: /assets/images/projects/page_photos/combating_fgm/community_gathering.jpg
