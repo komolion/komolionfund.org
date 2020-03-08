@@ -26,8 +26,10 @@ students ages 11-14 read stories to each other. All the activities are conducted
 volunteer-based setting and they combine both informal education and value based learning.
 
 ##### Impact
-The program has had more than 945 participants annually. One student scored 417 out of a potential 500 points on the
-last national examination and has been awarded a full scholarship by one of the banks.  Another 25 students scored at
-the 300 level. All the activities are conducted in a gender sensitive way in a volunteer based setting and they combine
-both informal education and value based learning. We are continuously mobilizing young people and making our activities
-more accessible to ensure that more young people can benefit and experience the love of Christ.
+Pendo Amani programs have almost 1,000 annual participants. In May 2019, the Baylor Music Mission team taught lessons in
+instrumental music to the children at Pendo Amani. The music and dance programs have been going very well. The soccer
+league championship was held in December 2019, with 48 teams of both boys and girls. A new handball league aimed at
+young girls in local schools has also been started.
+
+The learning center that provides study space for students has attracted larger numbers in 2019 and all the children who
+took the exams at the end of primary school achieved scores high enough to allow them to go to secondary schools.
