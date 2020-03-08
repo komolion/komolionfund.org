@@ -53,8 +53,6 @@ Pokot, Kenya. In 2016 alone, [45 young women went through this ceremony](https:/
 one every other year.
 
 ### 2019 Alternative Rite of Passage Ceremony
-In 2019, we held our third alternative rite of passage ceremony in Komolion, with attendance from 47 girls and 33 boys,
-as well as key members of the community and government officials. This ceremony allows the community to continue their
-cultural tradition of a rite of passage for girls while rejecting the practice of female genital mutilation. We plan to
-continue these ceremonies every other year to encourage girls to be focused, determined, dedicated, and courageous in
-their pursuit of education and a better life.
+A third ceremony was held in 2019, with attendance from 47 girls and 33 boys, as well as key members of the community
+and government officials. We plan to continue these ceremonies every other year to encourage girls to be focused,
+determined, dedicated, and courageous in their pursuit of education and a better life.
