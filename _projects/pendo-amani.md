@@ -1,6 +1,6 @@
 ---
 title: Empowering Youth at Pendo Amani
-image: ../assets/images/projects/pendo-amani.jpg
+image: ../assets/images/projects/header_photos/pendo-amani.jpg
 ---
 Pendo Amani (“love peace” in Swahili) is a youth development center located in Juja, about nineteen miles north of
 Nairobi, Kenya. The director, Mike Wachira, is a long-time friend of  the Komolion HDF founders and a talented artist.

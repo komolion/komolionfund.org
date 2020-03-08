@@ -1,6 +1,6 @@
 ---
 title: Spreading the Ministry of Music in Swahili
-image: ../assets/images/projects/spreading-music.jpg
+image: ../assets/images/projects/header_photos/spreading-music.jpg
 ---
 It is the practice of the Baylor University campus ministry to allow one student group each spring to sponsor chapel
 programs to raise money for a student mission project. In 2017 the Baylor Men’s Choir sponsored chapel programs about

@@ -1,6 +1,6 @@
 ---
 title: Community Development
-image: ../assets/images/projects/community-development.jpg
+image: ../assets/images/projects/header_photos/community-development.jpg
 ---
 With funds raised at a special chapel service, the Baylor Men’s Choir was able to provide new
 desks for students and teachers in the village school and to repair a wall in one of the school

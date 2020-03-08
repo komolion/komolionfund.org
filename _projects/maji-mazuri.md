@@ -1,6 +1,6 @@
 ---
 title: Loving Disabled Children at Maji Mazuri
-image: ../assets/images/projects/maji-mazuri.jpg
+image: ../assets/images/projects/header_photos/maji-mazuri.jpg
 ---
 Maji Mazuri, which means “good water” in Swahili, is a large non-profit organization in Nairobi with several different
 ministries.

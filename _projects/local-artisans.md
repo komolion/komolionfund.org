@@ -1,6 +1,6 @@
 ---
 title: Bringing Groups to Support Local Artisans
-image: ../assets/images/projects/local-artisans.jpg
+image: ../assets/images/projects/header_photos/local-artisans.jpg
 ---
 No visit to Nairobi is complete without visiting Amani ya Juu and Kazuri Beads. Both these enterprises focus on
 providing employment for women who have to support their families in the city, but need marketable skills to do so.
