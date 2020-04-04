@@ -26,4 +26,22 @@
 
 #nav-spacer {
   height: 68px;
+  @media (max-width: 575px) {
+    height: 108px;
+  }
+  @media (max-width: 405px) {
+    height: 168px;
+  }
+}
+
+#prayer-request {
+  padding: 15px 0;
+  text-align: center;
+  background-color: $primary;
+  color: $white;
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
 }
