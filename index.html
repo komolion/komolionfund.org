@@ -6,24 +6,19 @@ jumbotron-subtitle: Community members drive social change. We are there to help.
 jumbotron-give-button-text: Give Now
 jumbotron-report-button-text: View 2019 Report
 
-mission-title: We envision a world in which children and adults have opportunities to thrive personally and to make
-    positive contributions to their communities.
-mission-content: Komolion Human Development Fund encourages and provides funding for projects in local communities that
-    are designed by community members to enable increased education, health, cooperation, poverty reduction and quality
-    of life for the entire community.
+mission-title: We envision a world in which children and adults have opportunities to thrive personally and to make positive contributions to their communities.
+mission-content: Komolion Human Development Fund encourages and provides funding for projects in local communities that are designed by community members to enable increased education, health, cooperation, poverty reduction and quality of life for the entire community.
 
 core-values-title: Core Values
 
-donations-title: All administrative costs (besides processing fees) are covered by the Komolion Human Development Fund's
-    Board of Directors, so 100% of your donation goes directly to empowering communities in Kenya.
+donations-title: All administrative costs (besides processing fees) are covered by the Komolion Human Development Fund's Board of Directors, so 100% of your donation goes directly to empowering communities in Kenya.
 
 projects-title: Projects & Partnerships
 
 video-title: Featured Video
-video-description: The winds of change are blowing in Komolion, a tiny village in East Pokot, Kenya. A non-governmental
-    organization called Noonkera, supported by the Komolion Fund, has championed the cause of ending female genital
-    mutilation once and for all in this community.
+video-description: The winds of change are blowing in Komolion, a tiny village in East Pokot, Kenya. A non-governmental organization called Noonkera, supported by the Komolion Fund, has championed the cause of ending female genital mutilation once and for all in this community.
 ---
+
 <div id='jumbotron' class='text-center'>
   <div id='jumbotron-overlay' class='h-100'>
     <div class='container-fluid h-100'>
@@ -118,7 +113,7 @@ video-description: The winds of change are blowing in Komolion, a tiny village i
     <div class='row justify-content-center'>
       {% for project in site.projects %}
       <div class='project-section col col-lg-3 col-md-4 col-sm-6 col-12'>
-        <a href='{{ project.url }}'><img class='our-projects-image' width='100%' src='{{ project.image }}'/></a>
+        <a href='{{ project.url }}'><img class='our-projects-image' width='100%' src='{{ project.hero }}'/></a>
         <div class='our-projects-image-title pl-2 pr-2 text-center'>{{ project.title }}</div>
       </div>
       {% endfor %}
