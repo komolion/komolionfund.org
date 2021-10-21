@@ -25,27 +25,5 @@
 }
 
 #nav-spacer {
-  // height: 68px;
-  height: 122px;
-  @media (max-width: 948px) {
-    height: 146px;
-  }
-  @media (max-width: 497px) {
-    height: 170px;
-  }
-  @media (max-width: 346px) {
-    height: 194px;
-  }
-}
-
-#prayer-request {
-  padding: 15px 0;
-  text-align: center;
-  background-color: $primary;
-  color: $white;
-
-  a {
-    color: $white;
-    text-decoration: underline;
-  }
+  height: 68px;
 }
