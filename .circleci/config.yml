@@ -2,14 +2,14 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6.3-node-browsers
+      - image: cimg/ruby:3.3.4-node
     working_directory: ~/deployment
     steps:
       - checkout
       - run:
           name: Install dependencies and build project
           command: |
-            gem install bundler -v 2.1.4
+            gem install bundler -v 2.5.11
             make build
       - persist_to_workspace:
           root: .
