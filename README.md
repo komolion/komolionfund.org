@@ -8,6 +8,4 @@ It is built using [Jekyll](https://jekyllrb.com/), styled with [Bootstrap](http:
 
 Install the required Ruby version ([`rbenv`](https://github.com/rbenv/rbenv) recommended for version management)
 
-
-
 Start a local server with `make` or `make serve`
