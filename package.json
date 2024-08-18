@@ -2,8 +2,8 @@
   "name": "komolionfund.org",
   "version": "1.0.0",
   "dependencies": {
-    "bootstrap": "^4.6.2",
-    "jquery": "^3.7.1",
-    "popper.js": "^1.14.6"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1"
   }
 }

@@ -3,18 +3,18 @@ title: Board of Directors
 ---
 
 <div class='bg-light'>
-  <div class='container-fluid pb-5'>
+  <div class='container-xxl gx-5'>
     <div class='row'>
-      <h1 class='col text-center mt-4'>Board of Directors</h1>
+      <h1 class='col text-center mt-4'>{{ page.title }}</h1>
     </div>
     {% for member in site.team %}
     <hr>
-    <div class='row team-member-row align-items-center'>
-      <div class='col col-lg-4 col-md-5 col-12'>
-        <img class='team-member-photo ml-auto mr-auto mb-md-0 mb-4' src='{{ member.image }}'/>
+    <div class='row align-items-center'>
+      <div class='col-12 col-md-auto mb-3 mb-md-5'>
+        <img class='team-member-photo border border-primary border-3 rounded' src='{{ member.image }}' width='300px'/>
       </div>
-      <div class='col col-lg-8 col-md-7 col-12'>
-        <div class='team-member-title mb-2'>
+      <div class='col'>
+        <div class='fs-5 fw-bold mb-2'>
           {{ member.name }} - {{ member.position}}
           {% if member.linkedin %}
           <a href='https://www.linkedin.com/in/{{ member.linkedin }}' target='_blank' rel='noreferrer noopener'>
@@ -22,7 +22,9 @@ title: Board of Directors
           </a>
           {% endif %}
         </div>
-        <div class='team-member-description'>{{ member.content | markdownify }}</div>
+        <div class='mb-5'>
+          {{ member.content | markdownify }}
+        </div>
       </div>
     </div>
     {% endfor %}

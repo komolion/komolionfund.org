@@ -1,18 +1,5 @@
 @import 'variables';
 
 iframe.give-frame {
-  max-width: 425px !important;
-  max-height: none !important;
-  border: none;
-}
-
-.give-body {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.give-disclaimer {
-  font-size: 14px;
-  color: $shadow-gray;
+  max-width: 425px;
 }

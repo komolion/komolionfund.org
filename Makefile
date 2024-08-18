@@ -15,9 +15,9 @@ install:
 
 include-vendor-js: install
 	mkdir -p $(JS_DIR)
-	cp node_modules/jquery/dist/jquery.min.js $(JS_DIR)
-	cp node_modules/popper.js/dist/umd/popper.min.js $(JS_DIR)
+	cp node_modules/@popperjs/core/dist/umd/popper.min.js $(JS_DIR)
 	cp node_modules/bootstrap/dist/js/bootstrap.min.js $(JS_DIR)
+	cp node_modules/jquery/dist/jquery.min.js $(JS_DIR)
 
 build: include-vendor-js
 	bundle exec jekyll build

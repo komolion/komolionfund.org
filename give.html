@@ -5,24 +5,18 @@ disclaimer: Komolion Human Development Fund, Inc. will not provide any goods or 
 ---
 
 <div class='bg-light'>
-  <div class='container-fluid pb-5'>
+  <div class='container-xxl gx-5'>
     <div class='row'>
       <h1 class='col text-center mt-4'>{{ page.title }}</h1>
     </div>
     <hr>
     <div class='row justify-content-center'>
-      <iframe
-      allow='payment'
-      class='give-frame col-12 col-md-6 col-lg-5'
-      name='donorbox'
-      scrolling='no'
-      src='https://donorbox.org/embed/komolion-fund-donations?default_interval=o'
-      width="100%">
-    </iframe>
-    <div class='col-12 col-md-6 col-lg-7'>
-      <div class='give-body'>{{ page.body }}</div>
-      <div class='give-disclaimer'>{{ page.disclaimer }}</div>
-    </div>
+      <iframe src='https://donorbox.org/embed/komolion-fund-donations?default_interval=o' allow='payment' scrolling='no'
+        class='give-frame col-12 col-md-6 col-lg-5 col-xl-4 mb-5' name='donorbox'></iframe>
+      <div class='col-12 col-md-6 col-lg-7 col-xl-8'>
+        <p class='fs-5 fw-bold'>{{ page.body }}</p>
+        <p class='text-black-50 mb-5'>{{ page.disclaimer }}</p>
+      </div>
     </div>
   </div>
 </div>

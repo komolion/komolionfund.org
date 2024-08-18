@@ -1,20 +1,7 @@
 @import 'variables';
 
 .team-member-photo {
-  height: 250px;
-  border-radius: 10px;
-  border: thick solid $primary;
   box-shadow: $small-shadow;
-  display: block;
-}
-
-.team-member-title {
-  font-size: 20px;
-  font-weight: 500;
-}
-
-#contact-email {
-  color: $light;
 }
 
 .text-linkedin {
