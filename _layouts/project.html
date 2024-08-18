@@ -2,24 +2,23 @@
 layout: default
 ---
 
-<div class='project-container bg-light'>
-  <div class='project-image' style='background-image: url({{ page.hero }}); height: 50vh;'>
-    <div class='project-image-overlay'>
-      <div class='container-fluid h-100'>
-        <div class='row align-items-center h-100'>
-          <h1 class='col project-title text-center display-4 text-light'>{{ page.title | upcase }}</h1>
-        </div>
+<div class='project-image text-center' style='background-image: url({{ page.hero }});'>
+  <div class='project-image-overlay h-100 w-100'>
+    <div class='project-container container-xxl gx-5 align-content-center h-100'>
+      <h1 class='row justify-content-center display-4 fw-bold text-light'>
+        {{ page.title | upcase }}
       </div>
     </div>
   </div>
-  <div class='container-fluid'>
-    <div class='project-description-row row'>
-      <div class='project-description'>
-        {{ content }}
-        {% for photo in page.photos %}
-          <img class="project-body-image" src="{{ photo.src }}" alt="{{ photo.alt }}" width="100%"/>
-        {% endfor %}
-      </div>
+</div>
+<div class='bg-light border-top border-primary border-5'>
+  <div class='project-container container-xxl gx-5 py-5'>
+    <div class='mb-4'>
+      {{ content }}
     </div>
+    {% for photo in page.photos %}
+    <img class='project-body-image border border-primary border-3 rounded w-100 mb-4' src='{{ photo.src }}''
+      alt='{{ photo.alt }}'/>
+    {% endfor %}
   </div>
 </div>

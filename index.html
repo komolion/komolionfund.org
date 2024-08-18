@@ -1,7 +1,7 @@
 ---
 title: Komolion Fund
 
-jumbotron-title: Empower locals to change lives
+jumbotron-title: Empower Locals to Change Lives
 jumbotron-subtitle: Community members drive social change. We are there to help.
 jumbotron-give-button-text: Give Now
 
@@ -18,138 +18,126 @@ video-title: Featured Video
 video-description: The winds of change are blowing in Komolion, a tiny village in East Pokot, Kenya. A non-governmental organization called Noonkera, supported by the Komolion Fund, has championed the cause of ending female genital mutilation once and for all in this community.
 ---
 
-<div id='jumbotron' class='text-center'>
-  <div id='jumbotron-overlay' class='h-100'>
-    <div class='container-fluid h-100'>
-      <div class='row h-100'>
-        <div class='col align-self-center'>
-          <h1 id='jumbotron-text' class='row justify-content-center display-4 text-light'>
-            {{ page.jumbotron-title | upcase }}
-          </h1>
-          <div class='row justify-content-center d-none d-sm-block'>
-            <hr id='jumbotron-rule'>
-          </div>
-          <h4 id='jumbotron-sub-text' class='row justify-content-center text-light d-none d-sm-block'>
-            {{ page.jumbotron-subtitle }}
-          </h4>
-          <div class='row justify-content-center mt-4'>
-            <a id='jumbotron-give-btn'
-               class='jumbotron-btn m-2 btn-primary btn-lg'
-               href='/give.html'>
-              {{ page.jumbotron-give-button-text | upcase }}
-            </a>
-          </div>
-        </div>
+<div class='jumbotron text-center'>
+  <div class='jumbotron-overlay h-100 w-100'>
+    <div class='container-xxl gx-5 align-content-center h-100'>
+      <h1 class='row justify-content-center display-4 fw-bold text-light'>
+        {{ page.jumbotron-title | upcase }}
+      </h1>
+      <div class='row justify-content-center d-none d-sm-flex'>
+        <hr class='border border-2 border-primary opacity-100 w-50'>
+      </div>
+      <h4 class='row justify-content-center text-light d-none d-sm-block'>
+        {{ page.jumbotron-subtitle }}
+      </h4>
+      <div class='row justify-content-center mt-4'>
+        <a class='btn btn-primary btn-lg text-light col-auto' href='/give.html' role='button'>
+          {{ page.jumbotron-give-button-text | upcase }}
+        </a>
       </div>
     </div>
   </div>
 </div>
-<div id='mission-banner' class='bg-light'>
-  <div class='container-fluid'>
-    <div class='row'>
-      <div id='mission-title' class='col text-center'>
-        {{ page.mission-title }}
-      </div>
-    </div>
-    <div class='row'>
-      <div id='mission-text' class='col text-center'>
-        {{ page.mission-content }}
+<div class='text-center bg-light border-top border-primary border-5'>
+  <div class='container-xxl gx-5'>
+    <div class='row justify-content-center'>
+      <div class='col-12 col-md-10'>
+        <p class='row my-5 fs-3 fw-semibold lh-sm'>
+          {{ page.mission-title }}
+        </p>
+        <p class='row my-5 fs-5 ln-sm'>
+          {{ page.mission-content }}
+        </p>
       </div>
     </div>
   </div>
 </div>
-<div id='core-values-banner' class='bg-secondary'>
-  <div class='container-fluid'>
-    <div id='core-values-title-wrapper' class='text-center'>
-      <span id='core-values-title'>
+<div class='text-center bg-secondary'>
+  <div class='container-xxl gx-5'>
+    <div class='row justify-content-center'>
+      <p class='col-auto my-5 pb-1 fs-3 border-bottom border-primary border-2'>
         {{ page.core-values-title }}
-      </span>
+      </p>
     </div>
-    <div class='row text-center'>
+    <div class='row justify-content-center'>
       {% for value in site.data.values %}
-      <div class='core-value ml-auto mr-auto col col-md-4 col-12'>
-        <div class='row'>
-          <div class='core-value-icon'>
-            <i class='fa fa-3x fa-{{ value.icon }} text-primary'></i>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='core-value-title'>
-            {{ value.title }}
-          </div>
-        </div>
-        <div class='row'>
-          <div class='core-value-content'>
-            {{ value.content }}
-          </div>
-        </div>
+      <div class='col-10 col-md-4 gx-5'>
+        <i class='row fa fa-3x fa-{{ value.icon }} text-primary mb-3'></i>
+        <p class='row d-block fw-semibold'>
+          {{ value.title }}
+        </p>
+        <p class='row mb-5 d-block'>
+          {{ value.content }}
+        </p>
       </div>
       {% endfor %}
     </div>
   </div>
 </div>
-<div id='donations-banner' class='bg-primary'>
-  <div class='container-fluid'>
-    <div class='row'>
-      <div id='donations-banner-text' class='col text-center text-light'>
-        {{ page.donations-title }}
-      </div>
-    </div>
+<div class='text-center bg-primary'>
+  <div class='container-xxl gx-5 justify-content-center'>
+    <p class='text-center m-0 py-5 fs-4 text-light'>
+      {{ page.donations-title }}
+    </p>
   </div>
 </div>
-<div id='our-projects-banner' class='bg-light'>
-  <div class='container-fluid'>
-    <div id='our-projects-title-wrapper' class='text-center'>
-      <span id='our-projects-title'>
+<div class='bg-light'>
+  <div class='container-xxl gx-5'>
+    <div class='row justify-content-center'>
+      <p class='col-auto my-5 pb-1 fs-3 border-bottom border-primary border-2'>
         {{ page.projects-title }}
-      </span>
+      </p>
     </div>
     <div class='row justify-content-center'>
       {% for project in site.projects %}
-      <div class='project-section col col-lg-3 col-md-4 col-sm-6 col-12'>
-        <a href='{{ project.url }}'><img class='our-projects-image' width='100%' src='{{ project.hero }}'/></a>
-        <div class='our-projects-image-title pl-2 pr-2 text-center'>{{ project.title }}</div>
+      <div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+        <a href='{{ project.url }}'>
+          <img class='our-projects-image border border-primary border-3 rounded w-100' src='{{ project.hero }}'/>
+        </a>
+        <p class='text-center mt-2 mb-5'>
+          {{ project.title }}
+        </p>
       </div>
       {% endfor %}
     </div>
   </div>
 </div>
-<div id='featured-video-banner' class='bg-secondary'>
-  <div class='container-fluid'>
+<div class='bg-secondary'>
+  <div class='container-xxl gx-5'>
     <div class='row'>
-      <div id='featured-video-info' class='ml-auto mr-auto col col-md-6 col-12'>
-        <div id='featured-video-title-wrapper' class='text-center'>
-          <span id='featured-video-title'>
+      <div class='col-12 col-md-6'>
+        <div class='row justify-content-center text-center'>
+          <p class='col-auto mt-5 mb-4 pb-1 fs-3 border-bottom border-primary border-2'>
             {{ page.video-title }}
-          </span>
+          </p>
         </div>
-        <div id='featured-video-description'>
+        <p class='mb-0'>
           {{ page.video-description }}
-        </div>
+        </p>
       </div>
-      <div id='featured-video-wrapper' class='ml-auto mr-auto col col-md-6 col-12'>
-        <div id='featured-video' class='embed-responsive embed-responsive-16by9'>
-          <iframe class='embed-responsive-item' src='https://www.youtube.com/embed/Sne4eb4xemU'
-                  allowfullscreen></iframe>
+      <div class='col-12 col-md-6'>
+        <div class='featured-video ratio ratio-16x9 my-5 border border-primary border-3'>
+          <iframe src='https://www.youtube-nocookie.com/embed/Sne4eb4xemU?si=XCrDNcbkCGhg-50s'
+            title='YouTube video player' frameborder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div id='numbers-banner' class='bg-primary d-none d-sm-block'>
-  <div class='container-fluid'>
-    <div class='row text-center'>
+<div class='bg-primary text-center text-light'>
+  <div class='container-xxl gx-5'>
+    <div class='row pt-5'>
       {% for number in site.data.numbers %}
-      <div class='col col-md-3 col-6'>
-        <div class='number-icon'>
-          <i class='fa fa-3x fa-{{ number.icon }} text-light'></i>
-        </div>
-        <div class='number-title'>
+      <div class='col-6 col-md-3'>
+        <i class='d-block fa fa-3x fa-{{ number.icon }}'></i>
+        <p class='d-block mt-2 mb-0'>
           {{ number.title }}
-        </div>
-        <div class='number-content'>
+        </p>
+        <p class='d-block mt-2 mb-5 fs-3 fw-bold'>
           {{ number.content }}
-        </div>
+        </p>
       </div>
       {% endfor %}
     </div>

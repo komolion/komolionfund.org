@@ -1,20 +1,21 @@
-<div id='navigation' class='fixed-top bg-light'>
-  <nav class='container-fluid navbar navbar-expand-md'>
+<div class='sticky-top navbar navbar-expand-md bg-light'>
+  <div class='container-xxl gx-5'>
     <a class='navbar-brand' href='/'>
-      <img class='d-lg-inline d-none nav-logo' src='/assets/images/full_logo.png'>
-      <img class='d-inline d-lg-none nav-logo' src='/assets/images/text_only_logo.png'>
+      <img class='d-none d-sm-inline' height='50' src='/assets/images/full_logo.png' alt='Komolion Fund Logo'>
+      <img class='d-sm-none' height='50' src='/assets/images/text_only_logo.png' alt='Komolion Fund Logo'>
     </a>
-    <button class='navbar-toggler d-md-none' type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup'
-            aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
-      <span class='navbar-toggler-icon'><i class='fa fa-bars fa-lg text-primary'></i></span>
+    <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbar-collapsed'
+      aria-controls='navbar-collapsed' aria-expanded='false' aria-label='Toggle navigation'>
+      <i class='fa fa-bars fa-lg text-primary'></i>
     </button>
-    <div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
-      <div class='navbar-nav ml-auto'>
+    <div class='collapse navbar-collapse' id='navbar-collapsed'>
+      <ul class='navbar-nav ms-auto'>
         {% for item in site.data.navigation %}
-        <a href='{{ item.link }}' class='nav-item nav-link'>{{ item.name }}</a>
+        <li class='nav-item'>
+          <a class='nav-link text-primary' href='{{ item.link }}'>{{ item.name }}</a>
+        </li>
         {% endfor %}
-      </div>
+      </ul>
     </div>
-  </nav>
+  </div>
 </div>
-<div id='nav-spacer'></div>

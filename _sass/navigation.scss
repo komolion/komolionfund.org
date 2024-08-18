@@ -1,29 +1,15 @@
 @import 'variables';
 
-#navigation {
-  background-color: $light;
+.navbar {
   box-shadow: $nav-shadow;
-  font-weight: 500;
-
-  .navbar {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .navbar-toggler {
-    padding: 0;
-    line-height: 30px;
-  }
-
-  button:focus {
-    outline: none;
-  }
 }
 
-.nav-logo {
-  height: 50px;
-}
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
 
-#nav-spacer {
-  height: 68px;
+  &:focus {
+    border: none;
+    box-shadow: none;
+  }
 }
