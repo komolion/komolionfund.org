@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -16,7 +16,7 @@ jobs:
           paths: _site/
   deploy:
     docker:
-      - image: circleci/python
+      - image: cimg/python:3.13
     working_directory: ~/deployment
     steps:
       - run:
