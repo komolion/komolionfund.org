@@ -20,6 +20,13 @@ jobs:
     working_directory: ~/deployment
     steps:
       - run:
+          name: Plan deployment
+          command: |
+            circleci run release plan "${CIRCLE_JOB}" \
+              --environment-name="default" \
+              --component-name="${CIRCLE_PROJECT_REPONAME}" \
+              --target-version="1.0.${CIRCLE_BUILD_NUM}-${CIRCLE_SHA1:0:7}"
+      - run:
           name: Install awscli
           command: sudo pip install awscli
       - attach_workspace:
@@ -32,6 +39,17 @@ jobs:
           command: |
             aws cloudfront create-invalidation --distribution-id E19RRXFFJ1N65H --paths "/assets/css/*" "/projects/*" "/give.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
             aws cloudfront create-invalidation --distribution-id EU7GYR4PPCDYO --paths "/assets/css/*" "/projects/*" "/give.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
+      - run:
+          name: Update deployment status to running
+          command: circleci run release update "${CIRCLE_JOB}" --status=RUNNING
+      - run:
+          name: Update deployment status to success
+          command: circleci run release update "${CIRCLE_JOB}" --status=SUCCESS
+          when: on_success
+      - run:
+          name: Update deployment status to failed
+          command: circleci run release update "${CIRCLE_JOB}" --status=FAILED
+          when: on_fail
 
 workflows:
   version: 2
