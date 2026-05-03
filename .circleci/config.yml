@@ -9,7 +9,7 @@ jobs:
       - run:
           name: Install dependencies and build project
           command: |
-            gem install bundler -v 2.5.11
+            gem install bundler
             make build
       - persist_to_workspace:
           root: .
@@ -23,14 +23,20 @@ jobs:
           name: Plan deployment
           command: |
             circleci run release plan "${CIRCLE_JOB}" \
-              --environment-name="default" \
+              --environment-name="production" \
               --component-name="${CIRCLE_PROJECT_REPONAME}" \
               --target-version="1.0.${CIRCLE_BUILD_NUM}-${CIRCLE_SHA1:0:7}"
       - run:
           name: Install awscli
-          command: sudo pip install awscli
+          command: |
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            unzip awscliv2.zip
+            sudo ./aws/install
       - attach_workspace:
           at: ~/deployment
+      - run:
+          name: Update deployment status to running
+          command: circleci run release update "${CIRCLE_JOB}" --status=RUNNING
       - run:
           name: Deploy to S3
           command: aws s3 sync ./_site/ s3://www.komolionfund.org/ --delete
@@ -39,9 +45,6 @@ jobs:
           command: |
             aws cloudfront create-invalidation --distribution-id E19RRXFFJ1N65H --paths "/assets/css/*" "/projects/*" "/give.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
             aws cloudfront create-invalidation --distribution-id EU7GYR4PPCDYO --paths "/assets/css/*" "/projects/*" "/give.html" "/index.html" "/sitemap.xml" "/story.html" "/team.html"
-      - run:
-          name: Update deployment status to running
-          command: circleci run release update "${CIRCLE_JOB}" --status=RUNNING
       - run:
           name: Update deployment status to success
           command: circleci run release update "${CIRCLE_JOB}" --status=SUCCESS
@@ -52,7 +55,6 @@ jobs:
           when: on_fail
 
 workflows:
-  version: 2
   build-deploy:
     jobs:
       - build
