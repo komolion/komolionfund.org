@@ -164,6 +164,7 @@ DEPENDENCIES
   jekyll
   jekyll-seo-tag
   jekyll-sitemap
+  webrick (~> 1.9)
 
 BUNDLED WITH
    2.5.11

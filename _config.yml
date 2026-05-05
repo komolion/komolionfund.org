@@ -1,5 +1,8 @@
 collections:
   team:
+    output: true
+  en_memoriam:
+    output: true
   projects:
     output: true
 
