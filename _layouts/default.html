@@ -1,24 +1,33 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <meta http-equiv='X-UA-Compatible' content='IE=EmulateIE9'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
     <title>{{ page.title }}</title>
-    <link rel='stylesheet' href='/assets/css/styles.css'>
-    <link rel='shortcut icon' type='image/png' href='/assets/images/image_only_logo.png'>
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' crossorigin='anonymous'
-      integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU'>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/assets/images/image_only_logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      crossorigin="anonymous"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <script src="{{'/assets/js/jquery.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/js/popper.min.js' | prepend: site.baseurl}}"></script>
     <script src="{{'/assets/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
-    <script src='https://donorbox.org/widget.js' paypalExpress='false'></script>
+    <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
     {% seo %}
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
-    {% include footer.html %}
+    {% include navigation.html %} {{ content }} {% include footer.html %}
   </body>
 </html>
-
