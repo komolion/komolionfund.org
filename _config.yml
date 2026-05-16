@@ -1,7 +1,7 @@
 collections:
   team:
     output: true
-  en_memoriam:
+  in_memoriam:
     output: true
   projects:
     output: true
@@ -21,6 +21,7 @@ sass:
   load_paths:
     - _sass
     - node_modules
+  quiet_deps: true
 
 exclude:
   - Gemfile

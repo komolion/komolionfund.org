@@ -1,5 +1,5 @@
 ---
 name: Brenda Bradley
-position: Co-Founder
+position: Vice President & Co-Founder
 image: /assets/images/team/bbradley.jpg
 ---
