@@ -9,9 +9,9 @@ title: Board of Directors
     </div>
     <h2 class="mt-4 mb-4">Current Members</h2>
     <hr />
-    {% for member in site.team %}
+    {% for member in site.team %}{% unless member.in_memoriam %}
     <div class="row align-items-center">
-      <div class="col-12 col-md-auto mb-3 mb-md-5">
+      <div class="col-12 col-md-auto mb-3 mb-md-5 text-center text-md-start">
         <img
           class="team-member-photo border border-primary border-3 rounded"
           src="{{ member.image }}"
@@ -20,27 +20,27 @@ title: Board of Directors
         />
       </div>
       <div class="col">
-        <div class="fs-5 fw-bold mb-2">
-          {{ member.name }} - {{ member.position}} {% if member.linkedin %}
+        <div class="fs-5 fw-bold text-center text-md-start">{{ member.name }}</div>
+        <div class="text-muted mb-2 text-center text-md-start">{{ member.position }} {% if member.linkedin %}
           <a
             href="https://www.linkedin.com/in/{{ member.linkedin }}"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <i class="fab fa-lg fa-linkedin text-linkedin ms-1"></i>
+            <i class="fab fa-linkedin text-linkedin ms-1"></i>
           </a>
           {% endif %}
         </div>
         <div class="mb-5">{{ member.content | markdownify }}</div>
       </div>
     </div>
-    {% endfor %}
+    {% endunless %}{% endfor %}
 
     <h2 class="mt-5 mb-4">In Memoriam</h2>
     <hr />
 
     <div class="row">
-      {% for member in site.in_memoriam %}
+      {% for member in site.team %}{% if member.in_memoriam %}
       <div class="col-12 col-sm-auto mb-5 text-center">
         <img
           class="team-member-photo border border-primary border-3 rounded mb-3"
@@ -51,7 +51,7 @@ title: Board of Directors
         <div class="fs-5 fw-bold">{{ member.name }}</div>
         <div class="text-muted">{{ member.position }}</div>
       </div>
-      {% endfor %}
+      {% endif %}{% endfor %}
     </div>
   </div>
 </div>

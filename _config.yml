@@ -1,8 +1,6 @@
 collections:
   team:
     output: true
-  in_memoriam:
-    output: true
   projects:
     output: true
 
