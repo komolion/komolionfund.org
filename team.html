@@ -2,31 +2,56 @@
 title: Board of Directors
 ---
 
-<div class='bg-light'>
-  <div class='container-xxl gx-5'>
-    <div class='row'>
-      <h1 class='col text-center mt-4'>{{ page.title }}</h1>
+<div class="bg-light">
+  <div class="container-xxl gx-5">
+    <div class="row">
+      <h1 class="col text-center mt-5 mb-4">{{ page.title }}</h1>
     </div>
+    <h2 class="mt-4 mb-4">Current Members</h2>
+    <hr />
     {% for member in site.team %}
-    <hr>
-    <div class='row align-items-center'>
-      <div class='col-12 col-md-auto mb-3 mb-md-5'>
-        <img class='team-member-photo border border-primary border-3 rounded' src='{{ member.image }}' width='300px'/>
+    <div class="row align-items-center">
+      <div class="col-12 col-md-auto mb-3 mb-md-5">
+        <img
+          class="team-member-photo border border-primary border-3 rounded"
+          src="{{ member.image }}"
+          alt="{{ member.name }}"
+          width="300"
+        />
       </div>
-      <div class='col'>
-        <div class='fs-5 fw-bold mb-2'>
-          {{ member.name }} - {{ member.position}}
-          {% if member.linkedin %}
-          <a href='https://www.linkedin.com/in/{{ member.linkedin }}' target='_blank' rel='noreferrer noopener'>
-            <i class='fab fa-md fa-linkedin text-linkedin ml-1'></i>
+      <div class="col">
+        <div class="fs-5 fw-bold mb-2">
+          {{ member.name }} - {{ member.position}} {% if member.linkedin %}
+          <a
+            href="https://www.linkedin.com/in/{{ member.linkedin }}"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i class="fab fa-lg fa-linkedin text-linkedin ms-1"></i>
           </a>
           {% endif %}
         </div>
-        <div class='mb-5'>
-          {{ member.content | markdownify }}
-        </div>
+        <div class="mb-5">{{ member.content | markdownify }}</div>
       </div>
     </div>
     {% endfor %}
+
+    <h2 class="mt-5 mb-4">In Memoriam</h2>
+    <hr />
+
+    <div class="row">
+      {% for member in site.in_memoriam %}
+      <div class="col-12 col-sm-auto mb-5 text-center">
+        <img
+          class="team-member-photo border border-primary border-3 rounded mb-3"
+          src="{{ member.image }}"
+          alt="{{ member.name }}"
+          width="300"
+        />
+        <div class="fs-5 fw-bold">{{ member.name }}</div>
+        <div class="text-muted">{{ member.position }}</div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>

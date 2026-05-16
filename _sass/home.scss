@@ -1,4 +1,4 @@
-@import 'variables';
+@use 'variables' as *;
 
 .jumbotron {
   background: url('../images/jumbotron.jpg') no-repeat;

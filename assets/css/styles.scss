@@ -1,12 +1,22 @@
 ---
 ---
-@import 'variables';
+@use 'bootstrap/scss/bootstrap' with (
+  $primary: #009900,
+  $secondary: #eaeaea,
+  $light: #f6f6f6,
+  $dark: #252525,
+  $theme-colors: (
+    "primary":   #009900,
+    "secondary": #eaeaea,
+    "light":     #f6f6f6,
+    "dark":      #252525
+  ),
+  $font-family-base: (Muli, Helvetica, Arial, sans-serif)
+);
 
-@import 'bootstrap/scss/bootstrap';
-
-@import 'fonts';
-@import 'give';
-@import 'home';
-@import 'navigation';
-@import 'project';
-@import 'team';
+@use 'fonts';
+@use 'give';
+@use 'home';
+@use 'navigation';
+@use 'project';
+@use 'team';
