@@ -1,6 +1,5 @@
 ---
 title: Empower Locals to Change Lives
-body: Komolion Human Development Fund encourages and provides funding for projects in local communities that are designed by community members to enable increased education, health, cooperation, poverty reduction and quality of life for the entire community. We envision a world in which children and adults have opportunities to thrive personally and to make positive contributions to their communities.
 disclaimer: Komolion Human Development Fund, Inc. will not provide any goods or services in consideration of the gift received. This contribution is made with the understanding that Komolion Human Development Fund, Inc. has complete control and administration over the use of the donated funds. Komolion Human Development Fund, Inc. is a non-profit organization pursuant to Section 501(c)(3) of the United States Internal Revenue Code. Your donation may qualify for an income tax deduction in accordance with Federal and/or State income tax laws. Please consult with your tax advisor to determine whether your donation is tax deductible in whole or in part. Nothing in this communication is intended to constitute legal or tax advice.
 ---
 
@@ -10,13 +9,45 @@ disclaimer: Komolion Human Development Fund, Inc. will not provide any goods or 
       <h1 class='col text-center mt-4'>{{ page.title }}</h1>
     </div>
     <hr>
-    <div class='row justify-content-center'>
-      <iframe src='https://donorbox.org/embed/komolion-fund-donations?default_interval=o' allow='payment' scrolling='no'
-        class='give-frame col-12 col-md-6 col-lg-5 col-xl-4 mb-5' name='donorbox'></iframe>
-      <div class='col-12 col-md-6 col-lg-7 col-xl-8'>
-        <p class='fs-5 fw-bold'>{{ page.body }}</p>
-        <p class='text-black-50 mb-5'>{{ page.disclaimer }}</p>
+    <div class='row justify-content-center align-items-start'>
+      <div class='d-none d-lg-flex col-lg-7 col-xl-8 flex-column gap-4 pe-5 mb-5'>
+        <p class='small text-uppercase fw-semibold text-muted mb-0'>YOUR DONATION AT WORK</p>
+        {% for reason in site.data.give_reasons %}
+        <div class='d-flex gap-3 align-items-start'>
+          <i class='fa fa-{{ reason.icon }} fa-2x text-primary mt-1 col-auto'></i>
+          <div>
+            <p class='fw-bold mb-1'>{{ reason.title }}</p>
+            <p class='text-muted mb-0'>{{ reason.content }}</p>
+          </div>
+        </div>
+        {% endfor %}
+        <div class='border-top border-primary border-2 pt-4'>
+          <p class='small text-uppercase fw-semibold text-muted mb-3'>By the numbers</p>
+          <div class='row g-3'>
+            {% for number in site.data.numbers %}
+            <div class='col-3'>
+              <p class='fw-bold fs-4 text-primary mb-0'>{{ number.content }}</p>
+              <p class='small text-muted mb-0'>{{ number.title }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
+      <dbox-widget campaign="komolion-fund-donations" type="donation_form" enable-auto-scroll="true" class="col-12 col-lg-5 col-xl-4 mb-5"></dbox-widget>
+      <div class='d-lg-none col-12 d-flex flex-column gap-4 mb-4'>
+        {% for reason in site.data.give_reasons %}
+        <div class='d-flex gap-3 align-items-start'>
+          <i class='fa fa-{{ reason.icon }} fa-2x text-primary mt-1 col-auto'></i>
+          <div>
+            <p class='fw-bold mb-1'>{{ reason.title }}</p>
+            <p class='text-muted mb-0'>{{ reason.content }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class='row'>
+      <p class='col-12 small text-muted mb-4'>{{ page.disclaimer }}</p>
     </div>
   </div>
 </div>
