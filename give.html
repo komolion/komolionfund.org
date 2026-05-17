@@ -6,7 +6,7 @@ disclaimer: Komolion Human Development Fund, Inc. will not provide any goods or 
 <div class='bg-light'>
   <div class='container-xxl gx-5'>
     <div class='row'>
-      <h1 class='col text-center mt-4'>{{ page.title }}</h1>
+      <h1 class='col text-center mt-5 mb-4'>{{ page.title }}</h1>
     </div>
     <hr>
     <div class='row justify-content-center align-items-start'>
@@ -33,8 +33,10 @@ disclaimer: Komolion Human Development Fund, Inc. will not provide any goods or 
           </div>
         </div>
       </div>
-      <dbox-widget campaign="komolion-fund-donations" type="donation_form" enable-auto-scroll="true" class="col-12 col-lg-5 col-xl-4 mb-5"></dbox-widget>
+      <dbox-widget campaign="komolion-fund-donations" type="donation_form" enable-auto-scroll="true"
+        class="col-12 col-lg-5 col-xl-4 mb-5"></dbox-widget>
       <div class='d-lg-none col-12 d-flex flex-column gap-4 mb-4'>
+        <p class='small text-uppercase fw-semibold text-muted mb-0'>YOUR DONATION AT WORK</p>
         {% for reason in site.data.give_reasons %}
         <div class='d-flex gap-3 align-items-start'>
           <i class='fa fa-{{ reason.icon }} fa-2x text-primary mt-1 col-auto'></i>
