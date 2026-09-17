@@ -10,13 +10,13 @@ photos:
 
 In addition to supporting education for Komolion girls and boys, Komolion Fund continues to support other schools around Kenya.
 
-##### Hope Education Hub School, Kibera
+##### Center of Hope School, Kibera
 
-Led by Isabel Omondi, Hope Education Hub School has more than 150 students and operates in Kibera, the largest urban slum in Africa. Most of these children's families earn less than $2 a day and Hope Education Hub School provides a quality education, meals, and care.
+Led by Isabel Omondi, [Center of Hope Scool](https://www.facebook.com/centerofhopeschoolschool) has more than 150 students and operates in Kibera, the largest urban slum in Africa. Most of these children's families earn less than $2 a day and Center of Hope School provides a quality education, meals, and care. Additionally, the school's year-old music program, which the Komolion Fund has supported, has been dramatically successful. Their recorder choir competed in a national championship competition in 2026, while other participants have gained skills in stringed instruments, as well as the confidence and self-esteem that comes with learning a rare proficiency.
 
 ##### Africa Inland Church (AIC) Boarding School, Kajiado
 
-About 50 miles south of Nairobi, the Baylor Men’s Choir has sung for students and teachers and brought T-shirts to students at the AIC Boarding School. In 2013, the men painted a number of dormitories and the main dining hall and kitchen and installed gutters on an office building.
+About 50 miles south of Nairobi, many of Komolion's brightest students have recieved an education from the AIC Boarding School. Every visit, The Baylor Men’s Choir sings for students and teachers here, bringing with them T-shirts and school supplies. In 2013, the men painted a number of dormitories and the main dining hall and kitchen and installed gutters on an office building.
 
 ##### Grace Nanana Primary School, Kajiado
 
