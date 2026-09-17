@@ -14,13 +14,9 @@ photos:
     alt: Reson speaking
 ---
 
-### 2019 Alternative Rite of Passage Ceremony
+One of the primary reasons we founded the Komolion Human Development Fund was to combat Female Genital Mutilation (FGM), a practice that was extremely common in Komolion and the surrounding communities. The steps we have taken over the past two decades to confront FGM, such as community education and alternative rite of passage ceremonies, have proven quite successful. As of 2026, there have been no reported cases of FGM being practiced in the Komolion community, and a dramatic decrease in the practice in surrounding communities. Recent interviews with community members suggest a negative view of the practice among both men and women, and claim that FGM is no longer seen as a prerequisite for a woman to be eligible for marriage.
 
-A third alternative rite of passage ceremony was held in 2019, with attendance from 47 girls and 33 boys, as well as key members of the community and government officials. We plan to continue these ceremonies every other year to encourage girls to be focused, determined, dedicated, and courageous in their pursuit of education and a better life.
-
-Photos from the 2019 ceremony are included below.
-
-[View the full ceremony report here.](/assets/pdf/2019report.pdf)
+Combating FGM continues to be one of our top priorities, as we seek the complete and permeant eradication of the practice throughout Komolion and the broader East Baringo community.
 
 ### Frequently Asked Questions
 
@@ -46,8 +42,8 @@ FGM causes psychological and physical trauma, excessive bleeding which is someti
 
 ##### Is FGM legal?
 
-Legal progress has been made in recent years, as Kenya and other countries have made FGM an illegal practice along with marriage before the age of 18. However, enforcement is near impossible in remote areas like the village of Komolion in East Pokot. Yet even recently in Nairobi, the largest and capital city of Kenya, a girl of 10 was rescued in the middle of a marriage ceremony.
+Legal progress has been made in recent years, as Kenya and other countries have made FGM an illegal practice along with marriage before the age of 18. However, enforcement is near impossible in remote areas like Komolion. Yet even recently in Nairobi, the largest and capital city of Kenya, a girl of 10 was rescued in the middle of a marriage ceremony.
 
 ##### How can we move communities toward change?
 
-Research has demonstrated that the most effective way to reduce FGM in a community is an alternative rite of passage. This new ritual must be planned and carried out by the community itself. It also must be recognized as a valid mode of transition to womanhood by the potential husbands of the community. This is the approach we use in Komolion, in East Pokot, Kenya. In 2016 alone, [45 young women went through this ceremony](https://www.youtube.com/watch?v=yGBTKKyyYiI). A [second ceremony](https://www.youtube.com/watch?v=Sne4eb4xemU) was held in 2017, and a third in 2019. We hope to hold one every other year.
+Research has demonstrated that the most effective way to reduce FGM in a community is an alternative rite of passage. This new ritual must be planned and carried out by the community itself. It also must be recognized as a valid mode of transition to womanhood by the potential husbands of the community. This is the approach we use in Komolion, in East Pokot, Kenya. In 2016 , 45 young women went through this ceremony. A [second ceremony](https://www.youtube.com/watch?v=Sne4eb4xemU) was held in 2017, and [a third in 2019](/assets/pdf/2019RiteOfPassageReport.pdf). We continue to hold these ceremonies every few years as more women come of age in the Komolion comunity.

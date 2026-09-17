@@ -10,7 +10,11 @@ photos:
     alt: Studying
 ---
 
-Pendo Amani (“love peace” in Swahili) is a youth development center located in Juja, about nineteen miles north of Nairobi, Kenya. The director, Mike Wachira, is a long-time friend of  the Komolion HDF founders and a talented artist. Here is his description of Pendo Amani.
+[Pendo Amani Youth Organization](https://pendoamani.org) (“love peace” in Swahili) is a youth development center located in Juja, about nineteen miles north of Nairobi, Kenya. The director, Mike Wachira, is a long-time friend of the Komolion Fund founders and a talented artist.
+
+View [Pendo Amani's 2025 annual report](assets/pdf/PAYO_2025_report.pdf)
+
+Here is Mike's description of Pendo Amani:
 
 ##### Goal
 
@@ -22,6 +26,8 @@ The leadership building program consists of different topics that enhance leader
 
 ##### Impact
 
-Pendo Amani programs have almost 1,000 annual participants. In May 2019, the Baylor Music Mission team taught lessons in instrumental music to the children at Pendo Amani. The music and dance programs have been going very well. The soccer league championship was held in December 2019, with 48 teams of both boys and girls. A new handball league aimed at young girls in local schools has also been started.
+Pendo Amani programs have almost 1,000 annual participants. The Komolion fund and its mission teams have donated instruments and taught music lessonss to the children at Pendo Amani. The music and dance programs have been going very well. The soccer league championship was held in December 2019, with 48 teams of both boys and girls. A new handball league aimed at young girls in local schools has also been started.
 
-The learning center that provides study space for students has attracted larger numbers in 2019 and all the children who took the exams at the end of primary school achieved scores high enough to allow them to go to secondary schools.
+With the assistance of the textbooks, supplies, and other learning resources provided by the Komolion Fund, the PAYO library, which provides a study space for students attracted 554 students in 2025. All the children who took the exams at the end of primary school achieved scores high enough to allow them to go to secondary schools.
+
+For more information on Pendo Amani Youth Organizations programs and impact, check out their [2025 annual report](assets/pdf/PAYO_2025_report.pdf).
